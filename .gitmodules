@@ -66,3 +66,7 @@
 	path = bundle/vim-taglist
 	url = https://github.com/vim-scripts/taglist.vim.git
   ignore = dirty
+[submodule "bundle/supertab"]
+	path = bundle/supertab
+	url = https://github.com/ervandew/supertab.git
+  ignore = dirty
