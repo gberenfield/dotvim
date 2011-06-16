@@ -82,3 +82,7 @@
 	path = bundle/zoomwin
 	url = https://github.com/vim-scripts/ZoomWin.git
   ignore = dirty
+[submodule "bundle/vim-unimpaired"]
+	path = bundle/vim-unimpaired
+	url = https://github.com/tpope/vim-unimpaired.git
+  ignore = dirty
