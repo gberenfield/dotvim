@@ -62,3 +62,7 @@
 	path = bundle/nerdcommenter
 	url = https://github.com/ddollar/nerdcommenter.git
   ignore = dirty
+[submodule "bundle/vim-taglist"]
+	path = bundle/vim-taglist
+	url = https://github.com/vim-scripts/taglist.vim.git
+  ignore = dirty
