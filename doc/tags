@@ -293,8 +293,6 @@ conque_term-requirements	conque_term.txt	/*conque_term-requirements*
 conque_term-settings	conque_term.txt	/*conque_term-settings*
 conque_term-todo	conque_term.txt	/*conque_term-todo*
 conque_term-usage	conque_term.txt	/*conque_term-usage*
-cs	surround.txt	/*cs*
-ds	surround.txt	/*ds*
 ft-gitcommit-plugin	ft-gitcommit-plugin.txt	/*ft-gitcommit-plugin*
 g:CommandTAcceptSelectionMap	command-t.txt	/*g:CommandTAcceptSelectionMap*
 g:CommandTAcceptSelectionSplitMap	command-t.txt	/*g:CommandTAcceptSelectionSplitMap*
@@ -353,8 +351,6 @@ gist-vim-requirements	gist-vim.txt	/*gist-vim-requirements*
 gist-vim-tips	gist-vim.txt	/*gist-vim-tips*
 gist-vim-usage	gist-vim.txt	/*gist-vim-usage*
 iI	indent-object.txt	/*iI*
-i_CTRL-G_S	surround.txt	/*i_CTRL-G_S*
-i_CTRL-G_s	surround.txt	/*i_CTRL-G_s*
 i_CTRL-R_<Tab>	snipMate.txt	/*i_CTRL-R_<Tab>*
 idntobj-about	indent-object.txt	/*idntobj-about*
 idntobj-blanklines	indent-object.txt	/*idntobj-blanklines*
@@ -423,14 +419,6 @@ supertab-options	supertab.txt	/*supertab-options*
 supertab-preventcomplete	supertab.txt	/*supertab-preventcomplete*
 supertab-usage	supertab.txt	/*supertab-usage*
 supertab.txt	supertab.txt	/*supertab.txt*
-surround	surround.txt	/*surround*
-surround-author	surround.txt	/*surround-author*
-surround-customizing	surround.txt	/*surround-customizing*
-surround-issues	surround.txt	/*surround-issues*
-surround-mappings	surround.txt	/*surround-mappings*
-surround-replacements	surround.txt	/*surround-replacements*
-surround-targets	surround.txt	/*surround-targets*
-surround.txt	surround.txt	/*surround.txt*
 syntastic	syntastic.txt	/*syntastic*
 syntastic-about	syntastic.txt	/*syntastic-about*
 syntastic-changelog	syntastic.txt	/*syntastic-changelog*
@@ -480,7 +468,6 @@ unimpaired-next	unimpaired.txt	/*unimpaired-next*
 unimpaired-todo	unimpaired.txt	/*unimpaired-todo*
 unimpaired.txt	unimpaired.txt	/*unimpaired.txt*
 urxvt	solarized.txt	/*urxvt*
-vS	surround.txt	/*vS*
 v_[e	unimpaired.txt	/*v_[e*
 v_[u	unimpaired.txt	/*v_[u*
 v_[x	unimpaired.txt	/*v_[x*
@@ -489,14 +476,8 @@ v_]e	unimpaired.txt	/*v_]e*
 v_]u	unimpaired.txt	/*v_]u*
 v_]x	unimpaired.txt	/*v_]x*
 v_]y	unimpaired.txt	/*v_]y*
-vgS	surround.txt	/*vgS*
 vim-colors-solarized	solarized.txt	/*vim-colors-solarized*
-vs	surround.txt	/*vs*
 without	solarized.txt	/*without*
-yS	surround.txt	/*yS*
-ySS	surround.txt	/*ySS*
-ys	surround.txt	/*ys*
-yss	surround.txt	/*yss*
 zoomwin	ZoomWin.txt	/*zoomwin*
 zoomwin-copyright	ZoomWin.txt	/*zoomwin-copyright*
 zoomwin-history	ZoomWin.txt	/*zoomwin-history*
