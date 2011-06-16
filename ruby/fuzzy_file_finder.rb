@@ -1,1 +1,0 @@
-/opt/local/lib/ruby/gems/1.8/gems/jamis-fuzzy_file_finder-1.0.4/lib/fuzzy_file_finder.rb
