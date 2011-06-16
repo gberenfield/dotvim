@@ -86,3 +86,11 @@
 	path = bundle/vim-unimpaired
 	url = https://github.com/tpope/vim-unimpaired.git
   ignore = dirty
+[submodule "bundle/vim-searchfold"]
+	path = bundle/vim-searchfold
+	url = https://github.com/vim-scripts/searchfold.vim.git
+  ignore = dirty
+[submodule "bundle/vim-endwise"]
+	path = bundle/vim-endwise
+	url = https://github.com/tpope/vim-endwise.git
+  ignore = dirty
