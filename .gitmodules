@@ -134,3 +134,7 @@
 	path = bundle/vim-tcomment
 	url = https://github.com/tsaleh/vim-tcomment.git
   ignore = dirty
+[submodule "bundle/jQuery"]
+	path = bundle/jQuery
+	url = https://github.com/vim-scripts/jQuery.git
+  ignore = dirty
