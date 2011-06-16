@@ -1,2 +1,13 @@
 My basic .vim setup
 
+Setup
+
+  git clone git@github.com:gberenfield/dotvim.git
+
+  ln -s ~/.vim/vimrc ~/.vimrc
+  ln -s ~/.vim/gvimrc ~/.gvimrc
+
+  cd ~/.vim
+  git submodule init
+  git submodule update
+
