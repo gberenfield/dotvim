@@ -78,3 +78,7 @@
 	path = bundle/vim-rspec
 	url = https://github.com/taq/vim-rspec.git
   ignore = dirty
+[submodule "bundle/zoomwin"]
+	path = bundle/zoomwin
+	url = https://github.com/vim-scripts/ZoomWin.git
+  ignore = dirty
