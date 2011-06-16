@@ -293,7 +293,6 @@ conque_term-requirements	conque_term.txt	/*conque_term-requirements*
 conque_term-settings	conque_term.txt	/*conque_term-settings*
 conque_term-todo	conque_term.txt	/*conque_term-todo*
 conque_term-usage	conque_term.txt	/*conque_term-usage*
-ft-gitcommit-plugin	ft-gitcommit-plugin.txt	/*ft-gitcommit-plugin*
 g:CommandTAcceptSelectionMap	command-t.txt	/*g:CommandTAcceptSelectionMap*
 g:CommandTAcceptSelectionSplitMap	command-t.txt	/*g:CommandTAcceptSelectionSplitMap*
 g:CommandTAcceptSelectionTabMap	command-t.txt	/*g:CommandTAcceptSelectionTabMap*
