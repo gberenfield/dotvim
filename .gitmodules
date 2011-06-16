@@ -58,3 +58,7 @@
 	path = bundle/vim-jslint
 	url = https://github.com/hallettj/jslint.vim.git
   ignore = dirty
+[submodule "bundle/nerdcommenter"]
+	path = bundle/nerdcommenter
+	url = https://github.com/ddollar/nerdcommenter.git
+  ignore = dirty
