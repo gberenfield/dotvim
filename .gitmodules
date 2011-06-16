@@ -22,3 +22,7 @@
 	path = bundle/vim-haml
 	url = https://github.com/tpope/vim-haml.git
   ignore = dirty
+[submodule "bundle/vim-cucumber"]
+	path = bundle/vim-cucumber
+	url = https://github.com/tpope/vim-cucumber.git
+  ignore = dirty
