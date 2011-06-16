@@ -122,3 +122,7 @@
 	path = bundle/vim-molly
 	url = https://github.com/vim-scripts/molly.vim.git
   ignore = dirty
+[submodule "bundle/vim-ruby-debugger"]
+	path = bundle/vim-ruby-debugger
+	url = https://github.com/astashov/vim-ruby-debugger.git
+  ignore = dirty
