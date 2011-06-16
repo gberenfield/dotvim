@@ -94,3 +94,7 @@
 	path = bundle/vim-endwise
 	url = https://github.com/tpope/vim-endwise.git
   ignore = dirty
+[submodule "bundle/syntastic"]
+	path = bundle/syntastic
+	url = https://github.com/scrooloose/syntastic.git
+  ignore = dirty
