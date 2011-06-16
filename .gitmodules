@@ -98,3 +98,7 @@
 	path = bundle/syntastic
 	url = https://github.com/scrooloose/syntastic.git
   ignore = dirty
+[submodule "bundle/vim-puppet"]
+	path = bundle/vim-puppet
+	url = https://github.com/ajf/puppet-vim.git
+  ignore = dirty
