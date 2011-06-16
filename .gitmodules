@@ -70,3 +70,7 @@
 	path = bundle/supertab
 	url = https://github.com/ervandew/supertab.git
   ignore = dirty
+[submodule "bundle/vim-textile"]
+	path = bundle/vim-textile
+	url = https://github.com/timcharper/textile.vim.git
+  ignore = dirty
