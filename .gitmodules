@@ -54,3 +54,7 @@
 	path = bundle/vim-javascript
 	url = https://github.com/pangloss/vim-javascript.git
   ignore = dirty
+[submodule "bundle/vim-jslint"]
+	path = bundle/vim-jslint
+	url = https://github.com/hallettj/jslint.vim.git
+  ignore = dirty
