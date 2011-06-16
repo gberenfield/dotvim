@@ -126,3 +126,7 @@
 	path = bundle/vim-ruby-debugger
 	url = https://github.com/astashov/vim-ruby-debugger.git
   ignore = dirty
+[submodule "bundle/vim-repeat"]
+	path = bundle/vim-repeat
+	url = https://github.com/tpope/vim-repeat.git
+  ignore = dirty
