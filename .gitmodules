@@ -110,3 +110,7 @@
 	path = bundle/vim-gist
 	url = https://github.com/mattn/gist-vim.git
   ignore = dirty
+[submodule "bundle/arduino"]
+	path = bundle/arduino
+	url = https://github.com/vim-scripts/Arduino-syntax-file.git
+  ignore = dirty
