@@ -42,3 +42,7 @@
 	path = bundle/vim-align
 	url = https://github.com/tsaleh/vim-align.git
   ignore = dirty
+[submodule "bundle/vim-ack"]
+	path = bundle/vim-ack
+	url = https://github.com/mileszs/ack.vim.git
+  ignore = dirty
