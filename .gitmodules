@@ -1,5 +1,5 @@
 [submodule "vim-fugitive"]
-	path = vim-fugitive
+	path = bundle/vim-fugitive
 	url = https://github.com/tpope/vim-fugitive.git
   ignore = dirty
 [submodule "bundle/vim-rails"]
