@@ -17,9 +17,16 @@ Maintenance
   Per http://www.nils-haldenwang.de/frameworks-and-tools/git/how-to-ignore-changes-in-git-submodules
   adding "ignore = dirty" to each pathogen plugin in .gitmodules fixes this annoyance.
 
+  Upgrading all bundled plugins
+
+    You can use the foreach command to execute any shell script in from the root of all submodule directories. To update to the latest version of each plugin bundle, run the following:
+    --> git submodule foreach git pull origin master
+
+
 Opening files nicely
 
   Removed command-t. Not for me.
 
   Use peepopen (if on mac) or molly instead
+
 
