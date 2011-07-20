@@ -1,1 +1,0 @@
-/Users/mc/.vim/gvimrc
