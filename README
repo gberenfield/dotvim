@@ -2,7 +2,7 @@ My basic .vim setup
 
 Setup
 
-  git clone git@github.com:gberenfield/dotvim.git
+  git clone git://github.com/gberenfield/dotvim.git
 
   ln -s ~/.vim/vimrc ~/.vimrc
   ln -s ~/.vim/gvimrc ~/.gvimrc
