@@ -13,6 +13,10 @@ Setup
 
 Maintenance
 
+  * cd to ~/.vim 
+  * git pull
+
+
   Apparently, the helpfile system when using bundled plugins via pathogens causes git submodules to become dirty.
   Per http://www.nils-haldenwang.de/frameworks-and-tools/git/how-to-ignore-changes-in-git-submodules
   adding "ignore = dirty" to each pathogen plugin in .gitmodules fixes this annoyance.
