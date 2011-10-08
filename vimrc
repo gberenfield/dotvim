@@ -10,6 +10,9 @@ set number
 set ruler
 syntax on
 
+" filetype plugins ON
+filet plugin on
+
 " Set encoding
 set encoding=utf-8
 
@@ -47,7 +50,13 @@ map <Leader>n :NERDTreeToggle<CR>
 let g:CommandTMaxHeight=20
 
 " ZoomWin configuration
-map <Leader><Leader> :ZoomWin<CR>
+" map <Leader><Leader> :ZoomWin<CR>
+
+" PeepOpen
+if has("gui_macvim")
+  macmenu &File.New\ Tab key=<nop>
+  map <leader><leader> <Plug>PeepOpen
+end
 
 " CTags
 map <Leader>rt :!ctags --extra=+f -R *<CR><CR>
@@ -96,6 +105,12 @@ set backspace=indent,eol,start
 
 " load the plugin and indent settings for the detected filetype
 filetype plugin indent on
+
+" vimclojure settings
+let vimclojure#HighlightBuiltins = 1
+let vimclojure#WantNailgun = 1
+let vimclojure#NailgunClient = "/Users/mc/.vim/bundle/vimclojure/client/ng"
+nmap <Leader>rT :call vimclojure#RunTests('n')<CR>
 
 " Opens an edit command with the path of the currently edited file filled in
 " Normal mode: <Leader>e
