@@ -50,7 +50,7 @@ map <Leader>n :NERDTreeToggle<CR>
 let g:CommandTMaxHeight=20
 
 " ZoomWin configuration
-" map <Leader><Leader> :ZoomWin<CR>
+map <Leader>] :ZoomWin<CR>
 
 " PeepOpen
 if has("gui_macvim")

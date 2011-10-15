@@ -1,7 +1,7 @@
 if has("gui_macvim")
   set transparency=8
   set guioptions=mbaAce
-  set guifont=Inconsolata:h14.00
+  set guifont=Inconsolata:h12.00
   colorscheme desert
 
   " Fullscreen takes up entire screen
