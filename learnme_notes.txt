@@ -1,2 +1,23 @@
 :reg      	show the content of all registers (paste buffers)
 
+
+Future thoughts
+===============
+
+Bundle replacements
+-------------------
+
+Unbundle
+http://snk.tuxfamily.org/log/vim-script-management-system.html
+http://ithaca.arpinum.org/2011/11/22/vim-tweaking.html
+
+Vundle
+https://news.ycombinator.com/item?id=3266233
+https://github.com/gmarik/vundle
+
+
+General improvements
+--------------------
+https://news.ycombinator.com/item?id=3251743z
+http://stevelosh.com/projects/
+
