@@ -1,0 +1,2 @@
+:reg      	show the content of all registers (paste buffers)
+
