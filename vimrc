@@ -59,7 +59,7 @@ if has("gui_macvim")
 end
 
 " CTags
-map <Leader>rt :!ctags --extra=+f -R *<CR><CR>
+" map <Leader>rt :!ctags --extra=+f -R *<CR><CR>
 map <C-\> :tnext<CR>
 
 " Remember last location in file
