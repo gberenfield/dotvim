@@ -2,9 +2,6 @@ call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
 
 
-" Powerline
-let g:Powerline_symbols = 'fancy'
-
 set nocompatible
 
 " map F2 to clear search text
@@ -157,7 +154,7 @@ set modeline
 set modelines=10
 
 " Default color scheme
-color molokai
+colorscheme molokai
 
 " Directories for swp files
 set backupdir=~/.vim/backup
@@ -168,6 +165,9 @@ let g:JSLintHighlightErrorLine = 0
 
 " MacVIM shift+arrow-keys behavior (required in .vimrc)
 let macvim_hig_shift_movement = 1
+
+" Powerline
+let g:Powerline_symbols = 'fancy'
 
 " % to bounce from do to end etc.
 runtime! macros/matchit.vim
