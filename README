@@ -3,6 +3,10 @@ My basic .vim setup
 INSTALLATION
 ============
 git clone git://github.com/gberenfield/dotvim.git
+ln -s ~/dotvim/vimrc ~/.vimrc
+ln -s ~/dotvim/gvimrc ~/.gvimrc
+
+git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
 vim -u bundles.vim +BundleInstall +q
 
 vimclojure notes
