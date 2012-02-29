@@ -27,10 +27,9 @@ https://bitbucket.org/kotarak/vimclojure
 The server can be downloaded at
 http://clojars.org/repo/vimclojure/server/
 
-Opening files nicely
 
-  Removed command-t. Not for me.
-
-  Use peepopen (if on mac) or molly instead
-
+OPENING FILES NICELY
+--------------------
+Removed command-t. Not for me.
+Use peepopen (if on mac) or molly instead
 
