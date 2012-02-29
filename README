@@ -1,31 +1,14 @@
 My basic .vim setup
 
-Setup
+vimclojure notes
+----------------
+http://www.vim.org/scripts/script.php?script_id=2501
 
-  git clone git://github.com/gberenfield/dotvim.git
+in ~/.vim/bundle/VimClojure you'll need to manually install the client/ directory from the source repository
+https://bitbucket.org/kotarak/vimclojure
 
-  ln -s ~/.vim/vimrc ~/.vimrc
-  ln -s ~/.vim/gvimrc ~/.gvimrc
-
-  cd ~/.vim
-  git submodule init
-  git submodule update
-
-Maintenance
-
-  * cd to ~/.vim 
-  * git pull
-
-
-  Apparently, the helpfile system when using bundled plugins via pathogens causes git submodules to become dirty.
-  Per http://www.nils-haldenwang.de/frameworks-and-tools/git/how-to-ignore-changes-in-git-submodules
-  adding "ignore = dirty" to each pathogen plugin in .gitmodules fixes this annoyance.
-
-  Upgrading all bundled plugins
-
-    You can use the foreach command to execute any shell script in from the root of all submodule directories. To update to the latest version of each plugin bundle, run the following:
-    --> git submodule foreach git pull origin master
-
+The server can be downloaded at
+http://clojars.org/repo/vimclojure/server/
 
 Opening files nicely
 

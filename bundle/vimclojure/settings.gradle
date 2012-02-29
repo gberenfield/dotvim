@@ -1,6 +1,0 @@
-rootProject.name = 'vimclojure'
-include 'client'
-include 'nrepl-client'
-include 'server'
-include 'vim'
-include 'gradle'

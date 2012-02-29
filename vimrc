@@ -1,8 +1,9 @@
-call pathogen#runtime_append_all_bundles() 
-call pathogen#helptags()
+" call pathogen#runtime_append_all_bundles() 
+" call pathogen#helptags()
+" going to Vundle https://github.com/gmarik/vundle
 
-
-set nocompatible
+" Vundle and bundles configuration
+source ~/.vim/bundles.vim
 
 " map F2 to clear search text
 map <F2> :noh<CR>
@@ -14,9 +15,6 @@ set number
 set ruler
 syntax on
 
-" filetype plugins ON
-filet plugin on
-filetype plugin indent on
 
 " Set encoding
 set encoding=utf-8
