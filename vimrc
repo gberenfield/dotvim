@@ -16,6 +16,7 @@ syntax on
 
 " filetype plugins ON
 filet plugin on
+filetype plugin indent on
 
 " Set encoding
 set encoding=utf-8

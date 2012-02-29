@@ -17,7 +17,7 @@ subprojects {
     apply plugin: 'java-base'
 
     group = 'vimclojure'
-    version = '2.3.1-SNAPSHOT'
+    version = '2.4.0-SNAPSHOT'
 
     defaultTasks 'build'
 }
@@ -38,6 +38,7 @@ project(':server') {
 
     dependencies {
         compile 'org.clojure:clojure:1.+'
+        compile 'org.clojure:tools.nrepl:0.0.5'
     }
 
     uploadArchives {
@@ -71,6 +72,23 @@ project(':client') {
                 include "Makefile"
                 include "ng.exe"
             }
+        }
+    }
+}
+
+project(':nrepl-client') {
+    task compileHaskell {
+        //inputs.dir project.file('src/main/haskell')
+        //outputs.dir project.file('build/main/classes')
+    } << {
+        project.file("build/main/classes").mkdirs()
+        project.exec {
+            commandLine "ghc", "-isrc/main/haskell",
+                "-outputdir", "build/main/classes",
+                "-o", "build/main/classes/nrepl-client",
+                "-XFlexibleInstances",
+                "--make",
+                "src/main/haskell/VimClojure/Main.hs"
         }
     }
 }
@@ -160,7 +178,9 @@ task genCompletions(type: clojuresque.ClojureExec) {
     ]
 }
 
-task runNailgun(type: JavaExec) {
+task runRepl(type: clojuresque.ClojureExec) {
+    main = "clojure.tools.nrepl.cmdline/-main"
+    args = [ "--port", "12345" ]
     dependsOn project(':server').classes
     dependsOn project(':server').processResources
     classpath = project.files(
@@ -168,6 +188,4 @@ task runNailgun(type: JavaExec) {
         project(':server').sourceSets.main.classesDir,
         project(':server').sourceSets.main.compileClasspath
     )
-    main = 'vimclojure.nailgun.NGServer'
-    args = [ '127.0.0.1' ]
 }
