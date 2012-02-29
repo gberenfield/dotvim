@@ -623,3 +623,7 @@ let b:current_syntax = "lisp"
 
 " ---------------------------------------------------------------------
 " vim: ts=8 nowrap fdm=marker
+
+" Rainbow Parenthesis!
+runtime plugin/RainbowParenthsis.vim
+

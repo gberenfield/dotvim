@@ -178,3 +178,10 @@ set showcmd
 if filereadable(expand("~/.vimrc.local"))
   source ~/.vimrc.local
 endif
+
+" VimClojure ParenRainbow coloring
+let g:vimclojure#ParenRainbow = 1
+" VimClojure DynamicHighlight.. not sure what I gain here..
+let g:vimclojure#DynamicHighLighting = 1
+" VimClojure's indenting ala 'lispwords'
+let vimclojure#FuzzyIndent = 0
