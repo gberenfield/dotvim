@@ -1,5 +1,10 @@
 My basic .vim setup
 
+INSTALLATION
+============
+git clone git://github.com/gberenfield/dotvim.git
+vim -u bundles.vim +BundleInstall +q
+
 vimclojure notes
 ----------------
 http://www.vim.org/scripts/script.php?script_id=2501
