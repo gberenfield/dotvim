@@ -2,14 +2,22 @@ My basic .vim setup
 
 INSTALLATION
 ============
+assuming dotvim's cloned in a user's home directory.....
+
+--
 git clone git://github.com/gberenfield/dotvim.git
 ln -s ~/dotvim/vimrc ~/.vimrc
 ln -s ~/dotvim/gvimrc ~/.gvimrc
 
 git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
-vim -u bundles.vim +BundleInstall +q
+vim -u ~/.vim/bundles.vim +BundleInstall +q
+--
 
-vimclojure notes
+Taglist requires exuberant-ctags to be installed on the system
+http://ctags.sourceforge.net
+
+
+VIMCLOJURE NOTES
 ----------------
 http://www.vim.org/scripts/script.php?script_id=2501
 
