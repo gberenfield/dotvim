@@ -6,6 +6,7 @@ assuming dotvim's cloned in a user's home directory.....
 
 --
 git clone git://github.com/gberenfield/dotvim.git
+ln -s ~/dotvim ~/.vim
 ln -s ~/dotvim/vimrc ~/.vimrc
 ln -s ~/dotvim/gvimrc ~/.gvimrc
 
