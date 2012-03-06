@@ -58,8 +58,9 @@ map <Leader>] :ZoomWin<CR>
 " PeepOpen
 if has("gui_macvim")
   macmenu &File.New\ Tab key=<nop>
-  map <leader><leader> <Plug>PeepOpen
 end
+map <leader><leader> <Plug>PeepOpen
+" end
 
 " CTags
 " map <Leader>rt :!ctags --extra=+f -R *<CR><CR>

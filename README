@@ -35,3 +35,7 @@ OPENING FILES NICELY
 Removed command-t. Not for me.
 Use peepopen (if on mac) or molly instead
 
+VIMPAGER
+--------
+git://github.com/rkitover/vimpager.git
+
