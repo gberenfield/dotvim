@@ -44,6 +44,7 @@ Bundle 'tpope/vim-repeat'
 Bundle 'tomtom/tcomment_vim'
 Bundle 'jQuery'
 Bundle 'VimClojure'
+Bundle 'YankRing.vim'
 
 " filetype plugins ON
 filet plugin on
