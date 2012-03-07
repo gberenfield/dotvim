@@ -4,6 +4,8 @@ if has("gui_macvim")
   set guifont=Inconsolata:h12.00
   colorscheme desert
 
+  set clipboard="+
+
   " Fullscreen takes up entire screen
   set fuoptions=maxhorz,maxvert
 
