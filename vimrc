@@ -186,3 +186,11 @@ let g:vimclojure#ParenRainbow = 1
 let g:vimclojure#DynamicHighLighting = 1
 " VimClojure's indenting ala 'lispwords'
 let vimclojure#FuzzyIndent = 0
+
+" Yankring
+let g:yankring_history_file = '.yankring_history'
+
+" Yankring
+let g:yankring_history_file = '.yankring_history'
+let g:yankring_manual_clipboard_check = 0
+

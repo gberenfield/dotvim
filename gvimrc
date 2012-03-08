@@ -67,6 +67,9 @@ if has("gui_macvim")
   " Adjust viewports to the same size
   map <Leader>= <C-w>=
   imap <Leader>= <Esc> <C-w>=
+
+  " Yankring
+  let g:yankring_manual_clipboard_check = 1
 endif
 
 " Don't beep
@@ -232,3 +235,4 @@ call s:DefineCommand("mkdir", "Mkdir")
 if filereadable(expand("~/.gvimrc.local"))
   source ~/.gvimrc.local
 endif
+"
