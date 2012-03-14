@@ -43,7 +43,13 @@ Bundle 'molly.vim'
 Bundle 'tpope/vim-repeat'
 Bundle 'tomtom/tcomment_vim'
 Bundle 'jQuery'
-Bundle 'VimClojure'
+" Bundle 'VimClojure'
+" Bundle "slimv"
+" Bundle "sjl/tslime.vim"
+Bundle "gberenfield/sjl-slimv"
+" Bundle "chrismetcalf/vim-rainbow"
+Bundle "kien/rainbow_parentheses.vim"
+Bundle "sjl/gundo.vim"
 Bundle 'YankRing.vim'
 
 " filetype plugins ON
