@@ -180,25 +180,24 @@ if filereadable(expand("~/.vimrc.local"))
   source ~/.vimrc.local
 endif
 
-" SLIMV REPL syntax highlighting
-let g:slimv_repl_syntax = 1
-" let g:lisp_rainbow = 1
-" disable slimv's paredit mode..
-" let g:paredit_mode = 0
-
+" " SLIMV REPL syntax highlighting
+" let g:slimv_repl_syntax = 1
+" " let g:lisp_rainbow = 1
+" " disable slimv's paredit mode..
+" " let g:paredit_mode = 0
+" 
 " Rainbox Parentheses {{{
-
 " nnoremap <leader>R :RainbowParenthesesToggle<cr>
 
-" " VimClojure ParenRainbow coloring
-" let g:vimclojure#ParenRainbow = 1
-" " VimClojure DynamicHighlight.. not sure what I gain here..
-" let g:vimclojure#DynamicHighLighting = 1
-" " VimClojure's indenting ala 'lispwords'
-" let vimclojure#FuzzyIndent = 0
-" " per sjl's vimrc
-" let vimclojure#HighlightBuiltins = 1
-" let vimclojure#WantNailgun = 0
+" VimClojure ParenRainbow coloring
+let g:vimclojure#ParenRainbow = 1
+" VimClojure DynamicHighlight.. not sure what I gain here..
+let g:vimclojure#DynamicHighLighting = 1
+" VimClojure's indenting ala 'lispwords'
+let vimclojure#FuzzyIndent = 0
+" per sjl's vimrc
+let vimclojure#HighlightBuiltins = 1
+let vimclojure#WantNailgun = 0
 
 " Yankring
 let g:yankring_history_file = '.yankring_history'
