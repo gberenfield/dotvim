@@ -46,10 +46,10 @@ Bundle 'tomtom/tcomment_vim'
 Bundle 'jQuery'
 Bundle 'VimClojure'
 " Bundle "slimv"
-Bundle "sjl/tslime.vim"
+" Bundle "sjl/tslime.vim"
 " Bundle "gberenfield/sjl-slimv"
 " Bundle "chrismetcalf/vim-rainbow"
-Bundle "kien/rainbow_parentheses.vim"
+" Bundle "kien/rainbow_parentheses.vim"
 Bundle "sjl/gundo.vim"
 Bundle 'YankRing.vim'
 

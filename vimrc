@@ -185,54 +185,49 @@ endif
 " " let g:lisp_rainbow = 1
 " " disable slimv's paredit mode..
 " " let g:paredit_mode = 0
-" 
+
 " Rainbox Parentheses {{{
-" nnoremap <leader>R :RainbowParenthesesToggle<cr>
+" map <F3> :RainbowParenthesesToggle<cr>
 
 " VimClojure ParenRainbow coloring
 let g:vimclojure#ParenRainbow = 1
 " VimClojure DynamicHighlight.. not sure what I gain here..
 let g:vimclojure#DynamicHighLighting = 1
 " VimClojure's indenting ala 'lispwords'
-let vimclojure#FuzzyIndent = 0
+let vimclojure#FuzzyIndent = 1
 " per sjl's vimrc
 let vimclojure#HighlightBuiltins = 1
-let vimclojure#WantNailgun = 0
+let vimclojure#WantNailgun = 1
 
 " Yankring
 let g:yankring_history_file = '.yankring_history'
 let g:yankring_manual_clipboard_check = 0
 
-" TSlime
-let g:tslime_ensure_trailing_newlines = 1
-let g:tslime_normal_mapping = '<localleader>t'
-let g:tslime_visual_mapping = '<localleader>t'
-let g:tslime_vars_mapping = '<localleader>T'
+" " TSlime
+" let g:tslime_ensure_trailing_newlines = 1
+" let g:tslime_normal_mapping = '<localleader>t'
+" let g:tslime_visual_mapping = '<localleader>t'
+" let g:tslime_vars_mapping = '<localleader>T'
 
-" Better Rainbow Parentheses
-let g:rbpt_colorpairs = [
-    \ ['brown',       'RoyalBlue3'],
-    \ ['Darkblue',    'SeaGreen3'],
-    \ ['darkgray',    'DarkOrchid3'],
-    \ ['darkgreen',   'firebrick3'],
-    \ ['darkcyan',    'RoyalBlue3'],
-    \ ['darkred',     'SeaGreen3'],
-    \ ['darkmagenta', 'DarkOrchid3'],
-    \ ['brown',       'firebrick3'],
-    \ ['gray',        'RoyalBlue3'],
-    \ ['black',       'SeaGreen3'],
-    \ ['darkmagenta', 'DarkOrchid3'],
-    \ ['Darkblue',    'firebrick3'],
-    \ ['darkgreen',   'RoyalBlue3'],
-    \ ['darkcyan',    'SeaGreen3'],
-    \ ['darkred',     'DarkOrchid3'],
-    \ ['red',         'firebrick3'],
-    \ ]
-
-let g:rbpt_max = 16
-
-au VimEnter * RainbowParenthesesToggle
-au Syntax * RainbowParenthesesLoadRound
-au Syntax * RainbowParenthesesLoadSquare
-au Syntax * RainbowParenthesesLoadBraces
+" " Better Rainbow Parentheses
+" let g:rbpt_colorpairs = [
+"     \ ['brown',       'RoyalBlue3'],
+"     \ ['Darkblue',    'SeaGreen3'],
+"     \ ['darkgray',    'DarkOrchid3'],
+"     \ ['darkgreen',   'firebrick3'],
+"     \ ['darkcyan',    'RoyalBlue3'],
+"     \ ['darkred',     'SeaGreen3'],
+"     \ ['darkmagenta', 'DarkOrchid3'],
+"     \ ['brown',       'firebrick3'],
+"     \ ['gray',        'RoyalBlue3'],
+"     \ ['black',       'SeaGreen3'],
+"     \ ['darkmagenta', 'DarkOrchid3'],
+"     \ ['Darkblue',    'firebrick3'],
+"     \ ['darkgreen',   'RoyalBlue3'],
+"     \ ['darkcyan',    'SeaGreen3'],
+"     \ ['darkred',     'DarkOrchid3'],
+"     \ ['red',         'firebrick3'],
+"     \ ]
+" 
+" let g:rbpt_max = 16
 
