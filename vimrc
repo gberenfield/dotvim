@@ -113,7 +113,7 @@ filetype plugin indent on
 " vimclojure settings
 let vimclojure#HighlightBuiltins = 1
 let vimclojure#WantNailgun = 1
-let vimclojure#NailgunClient = "/Users/mc/.vim/bundle/vimclojure/client/ng"
+" let vimclojure#NailgunClient = "/Users/mc/.vim/bundle/vimclojure/client/ng"
 nmap <Leader>rT :call vimclojure#RunTests('n')<CR>
 
 " Opens an edit command with the path of the currently edited file filled in
