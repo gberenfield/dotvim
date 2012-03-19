@@ -29,6 +29,8 @@ https://bitbucket.org/kotarak/vimclojure
 The server can be downloaded at
 http://clojars.org/repo/vimclojure/server/
 
+The server setting below is machine dependent and should be stored in ~/.vimrc.local
+let vimclojure#NailgunClient = "/Users/mc/.vim/bundle/vimclojure/client/ng"
 
 OPENING FILES NICELY
 --------------------
