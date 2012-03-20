@@ -25,9 +25,13 @@ set tabstop=2
 set shiftwidth=2
 set softtabstop=2
 set expandtab
+
 " set list listchars=tab:\ \ ,trail:·
+" http://stackoverflow.com/questions/903934/unable-to-make-gray-eol-character-by-vimrc
+set list
 set listchars=tab:»·
 set listchars+=trail:·
+hi NonText ctermfg=7 guifg=gray
 
 " Searching
 set hlsearch
