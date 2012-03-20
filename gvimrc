@@ -1,22 +1,33 @@
+" MacVIM specific
 if has("gui_macvim")
-  set transparency=8
-  set guioptions=mbaAce
   set guifont=Inconsolata:h12.00
-  colorscheme desert
-
-
-  set clipboard=unnamed
+  set transparency=8
 
   " Fullscreen takes up entire screen
   set fuoptions=maxhorz,maxvert
 
   " Command-T for CommandT
   macmenu &File.New\ Tab key=<D-T>
-  map <D-t> :CommandT<CR>
-  imap <D-t> <Esc>:CommandT<CR>
 
   " Command-Return for fullscreen
   macmenu Window.Toggle\ Full\ Screen\ Mode key=<D-CR>
+endif
+
+" GVIM specific
+if has("gui_gtk2") 
+  set guifont=Inconsolata\ Medium\ 8
+endif
+
+if has("gui_running") " any gui-based vim
+  set guioptions=mbaAce
+  colorscheme desert
+
+  set clipboard=unnamed
+
+  " Command-T for CommandT
+  map <D-t> :CommandT<CR>
+  imap <D-t> <Esc>:CommandT<CR>
+
 
   " Command-Shift-F for Ack
   map <D-F> :Ack<space>
@@ -27,7 +38,6 @@ if has("gui_macvim")
   " Command-/ to toggle comments
   map <D-/> <plug>NERDCommenterToggle<CR>
   imap <D-/> <Esc><plug>NERDCommenterToggle<CR>i
-
 
   " Command-][ to increase/decrease indentation
   vmap <D-]> >gv
