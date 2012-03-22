@@ -30,7 +30,7 @@ set expandtab
 " http://stackoverflow.com/questions/903934/unable-to-make-gray-eol-character-by-vimrc
 set list
 " set listchars=tab:»·
-set listchars=tab:\ \·
+set listchars=tab:\ \ 
 set listchars+=trail:·
 hi NonText ctermfg=7 guifg=gray
 
