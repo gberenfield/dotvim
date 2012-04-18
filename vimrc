@@ -29,7 +29,7 @@ set expandtab
 " set list listchars=tab:\ \ ,trail:·
 " http://stackoverflow.com/questions/903934/unable-to-make-gray-eol-character-by-vimrc
 set list
-" set listchars=tab:»·
+set listchars=tab:»·
 set listchars=tab:\ \ 
 set listchars+=trail:·
 hi NonText ctermfg=7 guifg=gray
@@ -238,3 +238,13 @@ let g:yankring_manual_clipboard_check = 0
 " 
 " let g:rbpt_max = 16
 
+" Coffeescript folding settings
+au BufNewFile,BufReadPost *.coffee setl shiftwidth=2 expandtab nofoldenable
+" au BufNewFile,BufReadPost *.coffee setlocal foldexpr=getline(v:lnum)=~'->$'&&indent(v:lnum)<indent(v:lnum+1)?'a1':'s1
+au BufNewFile,BufReadPost *.coffee setl foldmethod=indent   "fold based on indent
+au BufNewFile,BufReadPost *.coffee setl foldnestmax=5      "deepest fold is 10 levels
+au bufnewfile,bufreadpost *.coffee setl foldlevel=2         "this is just what i use
+au bufnewfile,bufreadpost *.coffee setl foldignore="#"
+
+au BufWinLeave *.* mkview
+au BufWinEnter *.* silent loadview
