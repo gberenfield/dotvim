@@ -52,6 +52,7 @@ Bundle 'VimClojure'
 " Bundle "kien/rainbow_parentheses.vim"
 Bundle "sjl/gundo.vim"
 Bundle 'YankRing.vim'
+Bundle "kien/ctrlp.vim"
 
 " filetype plugins ON
 filet plugin on

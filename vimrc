@@ -63,10 +63,11 @@ let g:CommandTMaxHeight=20
 map <Leader>] :ZoomWin<CR>
 
 " PeepOpen
-if has("gui_macvim")
-  macmenu &File.New\ Tab key=<nop>
-end
-map <leader><leader> <Plug>PeepOpen
+" bye peepopen, hi ctrl-p?
+" if has("gui_macvim")
+"   macmenu &File.New\ Tab key=<nop>
+" end
+" map <leader><leader> <Plug>PeepOpen
 " end
 
 " CTags
