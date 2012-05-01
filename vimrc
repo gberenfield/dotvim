@@ -69,6 +69,12 @@ map <Leader>] :ZoomWin<CR>
 " end
 " map <leader><leader> <Plug>PeepOpen
 " end
+" Ctrlp
+let g:ctrlp_custom_ignore = {
+  \ 'file': '\.so$\|\.swp$\|\.zip$|\.lock$\|\.bz2$\|\.jar$\|\.class$\|\.png$\|\.jpg$',
+  \ 'dir':  '\.git$\|\.hg$\|\.svn$\|tmp$|cache',
+  \ }
+let g:ctrlp_map = '<leader><leader>'
 
 " CTags
 " map <Leader>rt :!ctags --extra=+f -R *<CR><CR>
