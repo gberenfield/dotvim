@@ -71,7 +71,7 @@ map <Leader>] :ZoomWin<CR>
 " end
 " Ctrlp
 let g:ctrlp_custom_ignore = {
-  \ 'file': '\.so$\|\.swp$\|\.zip$|\.lock$\|\.bz2$\|\.jar$\|\.class$\|\.png$\|\.jpg$',
+  \ 'file': '\.so$\|\.swp$\|\.zip$|\.lock$\|\.bz2$\|\.jar$\|\.class$\|\.scssc$\|\.png$\|\.jpg$',
   \ 'dir':  '\.git$\|\.hg$\|\.svn$\|tmp$|cache',
   \ }
 let g:ctrlp_map = '<leader><leader>'
