@@ -207,14 +207,14 @@ endif
 " map <F3> :RainbowParenthesesToggle<cr>
 
 " VimClojure ParenRainbow coloring
-let g:vimclojure#ParenRainbow = 1
+let g:vimclojure#ParenRainbow=1
 " VimClojure DynamicHighlight.. not sure what I gain here..
-let g:vimclojure#DynamicHighLighting = 1
+let g:vimclojure#DynamicHighLighting=1
 " VimClojure's indenting ala 'lispwords'
-let vimclojure#FuzzyIndent = 1
+let g:vimclojure#FuzzyIndent=1
 " per sjl's vimrc
-let vimclojure#HighlightBuiltins = 1
-let vimclojure#WantNailgun = 1
+let g:vimclojure#HighlightBuiltins=1
+let g:vimclojure#WantNailgun=1
 
 " Yankring
 let g:yankring_history_file = '.yankring_history'
@@ -255,6 +255,13 @@ au BufNewFile,BufReadPost *.coffee setl foldmethod=indent   "fold based on inden
 au BufNewFile,BufReadPost *.coffee setl foldnestmax=5      "deepest fold is 10 levels
 au bufnewfile,bufreadpost *.coffee setl foldlevel=2         "this is just what i use
 au bufnewfile,bufreadpost *.coffee setl foldignore="#"
+
+" Clojure folding settings
+" au BufNewFile,BufReadPost *.clj setl shiftwidth=2 expandtab nofoldenable
+" au BufNewFile,BufReadPost *.clj setl foldmethod=indent   "fold based on indent
+" au BufNewFile,BufReadPost *.ccj setl foldnestmax=1      "deepest fold is 10 levels
+" au bufnewfile,bufreadpost *.coffee setl foldlevel=1         "this is just what i use
+" au bufnewfile,bufreadpost *.coffee setl foldignore=";"
 
 au BufWinLeave *.* mkview
 au BufWinEnter *.* silent loadview
