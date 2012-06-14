@@ -206,6 +206,7 @@ endif
 " Rainbox Parentheses {{{
 " map <F3> :RainbowParenthesesToggle<cr>
 
+let vimclojure#WantNailgun=1
 " VimClojure ParenRainbow coloring
 let g:vimclojure#ParenRainbow=1
 " VimClojure DynamicHighlight.. not sure what I gain here..
@@ -214,7 +215,6 @@ let g:vimclojure#DynamicHighLighting=1
 let g:vimclojure#FuzzyIndent=1
 " per sjl's vimrc
 let g:vimclojure#HighlightBuiltins=1
-let g:vimclojure#WantNailgun=1
 
 " Yankring
 let g:yankring_history_file = '.yankring_history'
