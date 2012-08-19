@@ -265,3 +265,6 @@ au bufnewfile,bufreadpost *.coffee setl foldignore="#"
 
 au BufWinLeave *.* mkview
 au BufWinEnter *.* silent loadview
+
+let g:slime_target = "tmux"
+

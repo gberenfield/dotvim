@@ -54,6 +54,7 @@ Bundle 'VimClojure'
 Bundle "sjl/gundo.vim"
 Bundle 'YankRing.vim'
 Bundle "kien/ctrlp.vim"
+Bundle "jpalardy/vim-slime"
 
 " filetype plugins ON
 filet plugin on
