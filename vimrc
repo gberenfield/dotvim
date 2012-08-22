@@ -268,3 +268,84 @@ au BufWinEnter *.* silent loadview
 
 let g:slime_target = "tmux"
 
+" if exists('loaded_clojurefolding') || &cp
+"     finish
+" endif
+let loaded_clojurefolding=1
+
+" ---------------------------------------------------------------------------
+"  Automagic Clojure folding on defn's and defmacro's
+"
+function GetClojureFold()
+      if getline(v:lnum) =~ '^\s*(defn.*\s'
+            return ">1"
+      elseif getline(v:lnum) =~ '^\s*(def .*\s'
+            return ">1"
+      elseif getline(v:lnum) =~ '^\s*(defmacro.*\s'
+            return ">1"
+      elseif getline(v:lnum) =~ '^\s*(ns.*\s'
+            return ">1"
+      elseif getline(v:lnum) =~ '^\s*(defmethod.*\s'
+            return ">1"
+      elseif getline(v:lnum) =~ '^\s*(defpage.*\s'
+            return ">1"
+      elseif getline(v:lnum) =~ '^\s*(defpartial.*\s'
+            return ">1"
+      elseif getline(v:lnum) =~ '^\s*(deftest.*\s'
+            return ">1"
+      elseif getline(v:lnum) =~ '^\s*$'
+            let my_cljnum = v:lnum
+            let my_cljmax = line("$")
+
+            while (1)
+                  let my_cljnum = my_cljnum + 1
+                  if my_cljnum > my_cljmax
+                        return "<1"
+                  endif
+
+                  let my_cljdata = getline(my_cljnum)
+
+                  " If we match an empty line, stop folding
+                  if my_cljdata =~ '^$'
+                        return "<1"
+                  else
+                        return "="
+                  endif
+            endwhile
+      else
+            return "="
+      endif
+endfunction
+
+function TurnOnClojureFolding()
+      setlocal foldexpr=GetClojureFold()
+      setlocal foldmethod=expr
+endfunction
+
+augroup ft_clojure
+    au!
+
+    au BufNewFile,BufRead riemann.config set filetype=clojure
+    au FileType clojure silent! call TurnOnClojureFolding()
+    " au FileType clojure call TurnOnClojureFolding()
+    " au FileType clojure compiler clojure
+    au FileType clojure setlocal report=100000
+
+    " au BufWinEnter            SLIMV.REPL setlocal nolist
+    " au BufNewFile,BufReadPost SLIMV.REPL setlocal nowrap foldlevel=99
+    " au BufNewFile,BufReadPost SLIMV.REPL nnoremap <buffer> A GA
+    " au BufNewFile,BufReadPost SLIMV.REPL nnoremap <buffer> <localleader>R :emenu REPL.<Tab>
+
+    " " Fix the eval mappings.
+    " au FileType clojure nnoremap <buffer> <localleader>ef :<c-u>call SlimvEvalExp()<cr>
+    " au FileType clojure nnoremap <buffer> <localleader>ee :<c-u>call SlimvEvalDefun()<cr>
+
+    " " And the inspect mapping.
+    " au FileType clojure nmap <buffer> \i \di
+
+    " " And REPL-toggling mapping.
+    " " au FileType clojure nnoremap <buffer> \rr :call SlimvToggleRepl()<cr>
+
+    " " Indent top-level form.
+    " au FileType clojure nmap <buffer> <localleader>= mz99[(v%='z
+augroup END
