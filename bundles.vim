@@ -46,7 +46,7 @@ Bundle 'tpope/vim-repeat'
 Bundle 'tomtom/tcomment_vim'
 Bundle 'jQuery'
 Bundle 'VimClojure'
-" Bundle "slimv"
+Bundle "slimv.vim"
 " Bundle "sjl/tslime.vim"
 " Bundle "gberenfield/sjl-slimv"
 " Bundle "chrismetcalf/vim-rainbow"
@@ -54,7 +54,7 @@ Bundle 'VimClojure'
 Bundle "sjl/gundo.vim"
 Bundle 'YankRing.vim'
 Bundle "kien/ctrlp.vim"
-Bundle "jpalardy/vim-slime"
+" Bundle "jpalardy/vim-slime"
 
 " filetype plugins ON
 filet plugin on

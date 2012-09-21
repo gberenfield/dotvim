@@ -201,7 +201,7 @@ endif
 " let g:slimv_repl_syntax = 1
 " " let g:lisp_rainbow = 1
 " " disable slimv's paredit mode..
-" " let g:paredit_mode = 0
+let g:paredit_mode = 0
 
 " Rainbox Parentheses {{{
 " map <F3> :RainbowParenthesesToggle<cr>
