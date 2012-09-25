@@ -1,7 +1,3 @@
-" call pathogen#runtime_append_all_bundles() 
-" call pathogen#helptags()
-" going to Vundle https://github.com/gmarik/vundle
-
 " Vundle and bundles configuration
 source ~/.vim/bundles.vim
 
@@ -127,12 +123,6 @@ set backspace=indent,eol,start
 " load the plugin and indent settings for the detected filetype
 filetype plugin indent on
 
-" vimclojure settings
-let vimclojure#HighlightBuiltins = 1
-let vimclojure#WantNailgun = 1
-" let vimclojure#NailgunClient = "/Users/mc/.vim/bundle/vimclojure/client/ng"
-nmap <Leader>rT :call vimclojure#RunTests('n')<CR>
-
 " Opens an edit command with the path of the currently edited file filled in
 " Normal mode: <Leader>e
 map <Leader>e :e <C-R>=expand("%:p:h") . "/" <CR>
@@ -206,15 +196,19 @@ let g:paredit_mode = 0
 " Rainbox Parentheses {{{
 " map <F3> :RainbowParenthesesToggle<cr>
 
+" vimclojure settings
 let vimclojure#WantNailgun=1
 " VimClojure ParenRainbow coloring
 let g:vimclojure#ParenRainbow=1
 " VimClojure DynamicHighlight.. not sure what I gain here..
 let g:vimclojure#DynamicHighLighting=1
+let g:vimclojure#HighlightBuiltins=1
+let vimclojure#HighlightBuiltins = 1
 " VimClojure's indenting ala 'lispwords'
 let g:vimclojure#FuzzyIndent=1
 " per sjl's vimrc
-let g:vimclojure#HighlightBuiltins=1
+" let vimclojure#NailgunClient = "/Users/mc/.vim/bundle/vimclojure/client/ng"
+nmap <Leader>rT :call vimclojure#RunTests('n')<CR>
 
 " Yankring
 let g:yankring_history_file = '.yankring_history'

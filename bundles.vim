@@ -38,23 +38,21 @@ Bundle 'ajf/puppet-vim'
 Bundle 'bdd/vim-scala'
 Bundle 'mattn/gist-vim'
 Bundle 'Arduino-syntax-file'
-" Bundle 'bufexplorer.zip'
 Bundle "c9s/bufexplorer"
-" Bundle 'molly.vim'
-" Bundle 'astashov/vim-ruby-debugger'
 Bundle 'tpope/vim-repeat'
 Bundle 'tomtom/tcomment_vim'
 Bundle 'jQuery'
 Bundle 'VimClojure'
 Bundle "slimv.vim"
 " Bundle "sjl/tslime.vim"
+" tslime can't seem to pass a whole buffer of text to tmux
+" Bundle "jpalardy/vim-slime"
 " Bundle "gberenfield/sjl-slimv"
 " Bundle "chrismetcalf/vim-rainbow"
 " Bundle "kien/rainbow_parentheses.vim"
 Bundle "sjl/gundo.vim"
 Bundle 'YankRing.vim'
 Bundle "kien/ctrlp.vim"
-" Bundle "jpalardy/vim-slime"
 
 " filetype plugins ON
 filet plugin on
