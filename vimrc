@@ -191,7 +191,7 @@ endif
 " let g:slimv_repl_syntax = 1
 " " let g:lisp_rainbow = 1
 " " disable slimv's paredit mode..
-let g:paredit_mode = 0
+" let g:paredit_mode = 0
 
 " Rainbox Parentheses {{{
 " map <F3> :RainbowParenthesesToggle<cr>
@@ -214,7 +214,19 @@ nmap <Leader>rT :call vimclojure#RunTests('n')<CR>
 let g:yankring_history_file = '.yankring_history'
 let g:yankring_manual_clipboard_check = 0
 
-" " TSlime
+" vimux
+" Inspect runner pane map
+map <Leader>vi :VimuxInspectRunner<CR>
+" Run last command executed by VimuxRunCommand
+map <Leader>vl :VimuxRunLastCommand<CR>
+" Prompt for a command to run
+map <LocalLeader>vp :VimuxPromptCommand<CR>
+" If text is selected, save it in the v buffer and send that buffer it to tmux
+vmap <LocalLeader>vs "vy :call VimuxRunCommand(@v . "\n", 0)<CR>
+" Select current paragraph and send it to tmux
+nmap <LocalLeader>vs vip<LocalLeader>vs<CR>
+
+" TSlime
 " let g:tslime_ensure_trailing_newlines = 1
 " let g:tslime_normal_mapping = '<localleader>t'
 " let g:tslime_visual_mapping = '<localleader>t'

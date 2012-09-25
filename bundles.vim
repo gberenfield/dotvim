@@ -43,7 +43,8 @@ Bundle 'tpope/vim-repeat'
 Bundle 'tomtom/tcomment_vim'
 Bundle 'jQuery'
 Bundle 'VimClojure'
-Bundle "slimv.vim"
+Bundle 'benmills/vimux'
+" Bundle "slimv.vim"
 " Bundle "sjl/tslime.vim"
 " tslime can't seem to pass a whole buffer of text to tmux
 " Bundle "jpalardy/vim-slime"
