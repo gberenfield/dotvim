@@ -35,7 +35,6 @@ Bundle 'searchfold.vim'
 Bundle 'tpope/vim-endwise'
 Bundle 'scrooloose/syntastic'
 Bundle 'ajf/puppet-vim'
-Bundle 'bdd/vim-scala'
 Bundle 'mattn/gist-vim'
 Bundle 'Arduino-syntax-file'
 Bundle "c9s/bufexplorer"
