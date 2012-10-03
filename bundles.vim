@@ -54,6 +54,7 @@ Bundle 'benmills/vimux'
 Bundle "sjl/gundo.vim"
 Bundle 'YankRing.vim'
 Bundle "kien/ctrlp.vim"
+Bundle "nathanaelkane/vim-indent-guides"
 
 " filetype plugins ON
 filet plugin on

@@ -255,19 +255,17 @@ nmap <LocalLeader>vs vip<LocalLeader>vs<CR>
 " let g:rbpt_max = 16
 
 " Coffeescript folding settings
-au BufNewFile,BufReadPost *.coffee setl shiftwidth=2 expandtab nofoldenable
+au BufNewFile,BufReadPost *.coffee setl shiftwidth=2 expandtab
 " au BufNewFile,BufReadPost *.coffee setlocal foldexpr=getline(v:lnum)=~'->$'&&indent(v:lnum)<indent(v:lnum+1)?'a1':'s1
 au BufNewFile,BufReadPost *.coffee setl foldmethod=indent   "fold based on indent
-au BufNewFile,BufReadPost *.coffee setl foldnestmax=5      "deepest fold is 10 levels
-au bufnewfile,bufreadpost *.coffee setl foldlevel=2         "this is just what i use
+au BufNewFile,BufReadPost *.coffee setl foldnestmax=10      "deepest fold is 10 levels
+au bufnewfile,bufreadpost *.coffee setl foldlevel=1         "this is just what i use
 au bufnewfile,bufreadpost *.coffee setl foldignore="#"
 
 " Clojure folding settings
 " au BufNewFile,BufReadPost *.clj setl shiftwidth=2 expandtab nofoldenable
 " au BufNewFile,BufReadPost *.clj setl foldmethod=indent   "fold based on indent
 " au BufNewFile,BufReadPost *.ccj setl foldnestmax=1      "deepest fold is 10 levels
-" au bufnewfile,bufreadpost *.coffee setl foldlevel=1         "this is just what i use
-" au bufnewfile,bufreadpost *.coffee setl foldignore=";"
 
 au BufWinLeave *.* mkview
 au BufWinEnter *.* silent loadview
@@ -357,3 +355,8 @@ augroup ft_clojure
     " " Indent top-level form.
     " au FileType clojure nmap <buffer> <localleader>= mz99[(v%='z
 augroup END
+
+" vim-indent-guides
+let g:indent_guides_auto_colors = 1
+" autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guibg=red   ctermbg=3
+" autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=green ctermbg=4
