@@ -207,7 +207,8 @@ let vimclojure#HighlightBuiltins = 1
 " VimClojure's indenting ala 'lispwords'
 let g:vimclojure#FuzzyIndent=1
 " per sjl's vimrc
-" let vimclojure#NailgunClient = "/Users/mc/.vim/bundle/vimclojure/client/ng"
+" let vimclojure#NailgunClient = "/Users/".$username."/.vim/bundle/vimclojure/client/ng"
+let vimclojure#NailgunClient = $HOME."/.vim/bundle/VimClojure/client/ng"
 nmap <Leader>rT :call vimclojure#RunTests('n')<CR>
 
 " Yankring
