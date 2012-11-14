@@ -54,7 +54,7 @@ Bundle "sjl/gundo.vim"
 Bundle 'YankRing.vim'
 Bundle "kien/ctrlp.vim"
 Bundle "nathanaelkane/vim-indent-guides"
-
+Bundle "restore_view.vim"
 " filetype plugins ON
 filet plugin on
 filetype plugin indent on

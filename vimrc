@@ -278,8 +278,10 @@ au bufnewfile,bufreadpost *.coffee setl foldignore="#"
 " au BufNewFile,BufReadPost *.ccj setl foldnestmax=1      "deepest fold is 10 levels
 
 " per http://vim.wikia.com/wiki/Make_views_automatic
-au BufWinLeave ?* mkview
-au BufWinEnter ?* silent loadview
+set viewoptions=cursor,folds,slash,unix
+let g:skipview_files = [
+            \ '[\.git*]'
+            \ ]
 
 let g:slime_target = "tmux"
 
