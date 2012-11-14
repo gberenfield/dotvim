@@ -47,7 +47,7 @@ Bundle 'benmills/vimux'
 " Bundle "sjl/tslime.vim"
 " tslime can't seem to pass a whole buffer of text to tmux
 " Bundle "jpalardy/vim-slime"
-" Bundle "gberenfield/sjl-slimv"
+Bundle "gberenfield/sjl-slimv"
 " Bundle "chrismetcalf/vim-rainbow"
 " Bundle "kien/rainbow_parentheses.vim"
 Bundle "sjl/gundo.vim"

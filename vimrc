@@ -191,7 +191,16 @@ endif
 " let g:slimv_repl_syntax = 1
 " " let g:lisp_rainbow = 1
 " " disable slimv's paredit mode..
-" let g:paredit_mode = 0
+let g:paredit_mode = 0
+" Use a swank command that works, and doesn't require new app windows.
+" let g:slimv_swank_clojure = '!dtach -n /tmp/dtach-swank.sock -r winch lein swank'
+let g:slimv_repl_name = 'SLIMV.REPL'
+let g:slimv_repl_split = 4
+" let g:slimv_repl_syntax = 0
+let g:slimv_repl_wrap = 0
+" let g:slimv_swank_cmd = '!osascript -e "tell application \"Terminal\" to do script \"sbcl --load ~/.vim/slime/start-swank.lisp\""'
+" let g:slimv_swank_cmd = '! xterm -e sbcl --load ~/.vim/bundle/sjl-slimv/slime/start-swank.lisp &' " crashes on 64-bit macvim :-((
+let g:slimv_swank_cmd = '!osascript -e "tell application \"Terminal\" to do script \"sbcl --load ~/.vim/bundle/sjl-slimv/slime/start-swank.lisp\""'
 
 " Rainbox Parentheses {{{
 " map <F3> :RainbowParenthesesToggle<cr>
@@ -268,8 +277,9 @@ au bufnewfile,bufreadpost *.coffee setl foldignore="#"
 " au BufNewFile,BufReadPost *.clj setl foldmethod=indent   "fold based on indent
 " au BufNewFile,BufReadPost *.ccj setl foldnestmax=1      "deepest fold is 10 levels
 
-au BufWinLeave *.* mkview
-au BufWinEnter *.* silent loadview
+" per http://vim.wikia.com/wiki/Make_views_automatic
+au BufWinLeave ?* mkview
+au BufWinEnter ?* silent loadview
 
 let g:slime_target = "tmux"
 
