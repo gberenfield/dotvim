@@ -279,9 +279,7 @@ au bufnewfile,bufreadpost *.coffee setl foldignore="#"
 
 " per http://vim.wikia.com/wiki/Make_views_automatic
 set viewoptions=cursor,folds,slash,unix
-let g:skipview_files = [
-            \ '[\.git*]'
-            \ ]
+let g:skipview_files = ['.git*']
 
 let g:slime_target = "tmux"
 
