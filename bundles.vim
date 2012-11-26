@@ -55,7 +55,7 @@ Bundle 'YankRing.vim'
 Bundle "kien/ctrlp.vim"
 Bundle "nathanaelkane/vim-indent-guides"
 Bundle "restore_view.vim"
-Bundle "gnupg.vim"
+Bundle "jamessan/vim-gnupg"
 
 " filetype plugins ON
 filet plugin on
