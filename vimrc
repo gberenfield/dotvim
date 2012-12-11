@@ -161,7 +161,10 @@ set modeline
 set modelines=10
 
 " Default color scheme
-colorscheme molokai
+" colorscheme molokai
+" colorscheme advantage
+colorscheme af
+set background=dark
 
 " Directories for swp files
 set backupdir=~/.vim/backup

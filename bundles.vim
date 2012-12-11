@@ -57,6 +57,8 @@ Bundle "nathanaelkane/vim-indent-guides"
 Bundle "restore_view.vim"
 Bundle "jamessan/vim-gnupg"
 Bundle "vimwiki"
+Bundle "MapFinder"
+Bundle 'flazz/vim-colorschemes'
 
 " filetype plugins ON
 filet plugin on
