@@ -378,3 +378,10 @@ let g:indent_guides_auto_colors = 1
 " MUTT/e-mail spellchecking
 autocmd FileType mail set spell
 
+" vimwiki
+let wiki_1 = {}
+let wiki_1.path = '~/.vimwiki/'
+let wiki_2 = {}
+let wiki_2.path = '~/.dwiki/'
+let g:vimwiki_list = [wiki_1, wiki_2]
+
