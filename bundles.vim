@@ -59,6 +59,7 @@ Bundle "jamessan/vim-gnupg"
 Bundle "vimwiki"
 Bundle "MapFinder"
 Bundle 'flazz/vim-colorschemes'
+Bundle "mayansmoke"
 
 " filetype plugins ON
 filet plugin on
