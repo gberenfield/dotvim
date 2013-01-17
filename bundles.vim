@@ -60,6 +60,7 @@ Bundle "vimwiki"
 Bundle "MapFinder"
 Bundle 'flazz/vim-colorschemes'
 Bundle "mayansmoke"
+Bundle 'tpope/vim-classpath'
 
 " filetype plugins ON
 filet plugin on
