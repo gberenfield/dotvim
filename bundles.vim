@@ -43,11 +43,8 @@ Bundle 'tomtom/tcomment_vim'
 Bundle 'jQuery'
 Bundle 'VimClojure'
 Bundle 'benmills/vimux'
-" Bundle "slimv.vim"
-" Bundle "sjl/tslime.vim"
-" tslime can't seem to pass a whole buffer of text to tmux
-" Bundle "jpalardy/vim-slime"
-Bundle "gberenfield/sjl-slimv"
+  " turning off sjl-slimv as lispwords may be interefered with in vimclojure...
+  " Bundle "gberenfield/sjl-slimv"
 " Bundle "chrismetcalf/vim-rainbow"
 " Bundle "kien/rainbow_parentheses.vim"
 Bundle "sjl/gundo.vim"
@@ -60,9 +57,9 @@ Bundle "vimwiki"
 Bundle "MapFinder"
 Bundle 'flazz/vim-colorschemes'
 Bundle "mayansmoke"
-Bundle 'tpope/vim-classpath'
+  " Bundle 'tpope/vim-classpath'
+  " disabling vim-classpath as it does slowdown clj loads pretty badly...
 
-" filetype plugins ON
 filet plugin on
 filetype plugin indent on
 
