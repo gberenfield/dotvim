@@ -306,4 +306,7 @@ let wiki_2.path = '~/.dwiki/'
 let g:vimwiki_list = [wiki_1, wiki_2]
 
 
+" XML lint the xml
+au FileType xml exe ":silent 1,$!xmllint --format --recover - 2>/dev/null"
+
 
