@@ -4,3 +4,5 @@ backup/*
 .netrwhist
 bundle/*
 view/*
+snippets/mail.snippets
+
