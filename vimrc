@@ -310,11 +310,8 @@ let g:vimwiki_list = [wiki_1, wiki_2]
 au FileType xml exe ":silent 1,$!xmllint --format --recover - 2>/dev/null"
 
 
-" Clojure Folding
+" Clojure Folding START
 let loaded_clojurefolding=1
-
-" ---------------------------------------------------------------------------
-"  Automagic Clojure folding on defn's and defmacro's
 
 function CompareLispword(line)
   "" Defintions: what to fold?
@@ -368,7 +365,6 @@ augroup ft_clojure
     au BufNewFile,BufRead riemann.config set filetype=clojure
     au FileType clojure silent! call TurnOnClojureFolding()
     au FileType clojure setlocal report=100000
-    au FileType clojure setlocal lispwords+=defroutes
 augroup END
-
+" Clojure Folding END
 
