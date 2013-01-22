@@ -37,28 +37,29 @@ Bundle 'scrooloose/syntastic'
 Bundle 'ajf/puppet-vim'
 Bundle 'mattn/gist-vim'
 Bundle 'Arduino-syntax-file'
-Bundle "c9s/bufexplorer"
+Bundle 'c9s/bufexplorer'
 Bundle 'tpope/vim-repeat'
 Bundle 'tomtom/tcomment_vim'
 Bundle 'jQuery'
 Bundle 'VimClojure'
 Bundle 'benmills/vimux'
-  " turning off sjl-slimv as lispwords may be interefered with in vimclojure...
-  " Bundle "gberenfield/sjl-slimv"
-" Bundle "chrismetcalf/vim-rainbow"
-" Bundle "kien/rainbow_parentheses.vim"
-Bundle "sjl/gundo.vim"
+" Bundle 'gberenfield/sjl-slimv'                  " turning off sjl-slimv as lispwords may be interefered with in vimclojure...
+" Bundle 'chrismetcalf/vim-rainbow'
+" Bundle 'kien/rainbow_parentheses.vim'
+Bundle 'sjl/gundo.vim'
 Bundle 'YankRing.vim'
-Bundle "kien/ctrlp.vim"
-Bundle "nathanaelkane/vim-indent-guides"
-Bundle "restore_view.vim"
-Bundle "jamessan/vim-gnupg"
-Bundle "vimwiki"
-Bundle "MapFinder"
+Bundle 'kien/ctrlp.vim'
+Bundle 'nathanaelkane/vim-indent-guides'
+Bundle 'restore_view.vim'
+Bundle 'jamessan/vim-gnupg'
+Bundle 'vimwiki'
+Bundle 'MapFinder'
 Bundle 'flazz/vim-colorschemes'
-Bundle "mayansmoke"
-  " Bundle 'tpope/vim-classpath'
-  " disabling vim-classpath as it does slowdown clj loads pretty badly...
+Bundle 'mayansmoke'
+" Bundle 'tpope/vim-classpath'                    " disabling vim-classpath as it does slowdown clj loads pretty badly...
+" Bundle 'utl.vim'                                " interesting url handler plugin...
+" Bundle 'tomtom/tlib_vim'                        " required for viki
+" Bundle 'tomtom/viki_vim'                        " viki, another wiki... not sure about it.
 
 filet plugin on
 filetype plugin indent on
