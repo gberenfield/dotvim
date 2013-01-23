@@ -60,6 +60,7 @@ Bundle 'mayansmoke'
 " Bundle 'utl.vim'                                " interesting url handler plugin...
 " Bundle 'tomtom/tlib_vim'                        " required for viki
 " Bundle 'tomtom/viki_vim'                        " viki, another wiki... not sure about it.
+Bundle 'gberenfield/cljfold.vim'
 
 filet plugin on
 filetype plugin indent on
