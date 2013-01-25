@@ -309,4 +309,7 @@ let g:vimwiki_list = [wiki_1, wiki_2]
 " XML lint the xml
 au FileType xml exe ":silent 1,$!xmllint --format --recover - 2>/dev/null"
 
+" \jt for re-formatting json. Doing a direct call instead of 'python -m
+" json.dump' for 2-space indents vs 4.
+nmap <leader>jt <Esc>:%!python -c "exec(\"import sys\nimport json\njson.dump(json.load(sys.stdin),sys.stdout,sort_keys=True,indent=2)\")"<CR><Esc>:set filetype=json<CR>
 
