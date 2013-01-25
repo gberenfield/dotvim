@@ -105,9 +105,6 @@ au BufRead,BufNewFile {Gemfile,Rakefile,Vagrantfile,Thorfile,config.ru}    set f
 " md, markdown, and mk are markdown and define buffer-local preview
 au BufRead,BufNewFile *.{md,markdown,mdown,mkd,mkdn} call s:setupMarkup()
 
-" add json syntax highlighting
-au BufNewFile,BufRead *.json set ft=javascript
-
 au BufRead,BufNewFile *.txt call s:setupWrapping()
 
 " make Python follow PEP8 ( http://www.python.org/dev/peps/pep-0008/ )
@@ -144,8 +141,9 @@ vmap <C-Up> [egv
 vmap <C-Down> ]egv
 
 " Enable syntastic syntax checking
-let g:syntastic_enable_signs=1
-let g:syntastic_quiet_warnings=1
+let g:syntastic_enable_signs = 1
+let g:syntastic_quiet_warnings = 0
+let g:syntastic_enable_highlighting = 1
 
 " gist-vim defaults
 if has("mac")
@@ -308,6 +306,9 @@ let g:vimwiki_list = [wiki_1, wiki_2]
 
 " XML lint the xml
 au FileType xml exe ":silent 1,$!xmllint --format --recover - 2>/dev/null"
+
+" add json syntax highlighting
+au BufNewFile,BufRead *.json set ft=json
 
 " \jt for re-formatting json. Doing a direct call instead of 'python -m
 " json.dump' for 2-space indents vs 4.
