@@ -5,4 +5,5 @@ backup/*
 bundle/*
 view/*
 snippets/mail.snippets
+vimrc.private
 
