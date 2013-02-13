@@ -9,6 +9,7 @@ git clone git://github.com/gberenfield/dotvim.git
 ln -s ~/dotvim ~/.vim
 ln -s ~/dotvim/vimrc ~/.vimrc
 ln -s ~/dotvim/gvimrc ~/.gvimrc
+ln -s ~/dotvim/en.utf-8.add ~/dotvim/bundle/vundle/spell
 mkdir -p ~/dotvim/backup
 
 git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
