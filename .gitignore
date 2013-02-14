@@ -6,4 +6,4 @@ bundle/*
 view/*
 snippets/mail.snippets
 vimrc.private
-
+vimpager/
