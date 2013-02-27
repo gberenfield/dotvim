@@ -295,6 +295,7 @@ let g:indent_guides_auto_colors = 1
 
 " MUTT/e-mail spellchecking
 autocmd FileType mail set spell
+autocmd FileType mail setlocal fo+=aw
 
 " XML lint the xml
 au FileType xml exe ":silent 1,$!xmllint --format --recover - 2>/dev/null"
