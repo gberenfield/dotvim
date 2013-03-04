@@ -41,8 +41,7 @@ Bundle 'c9s/bufexplorer'
 Bundle 'tpope/vim-repeat'
 Bundle 'tomtom/tcomment_vim'
 Bundle 'jQuery'
-Bundle 'VimClojure'
-Bundle 'benmills/vimux'
+" Bundle 'benmills/vimux'
 " Bundle 'gberenfield/sjl-slimv'                  " turning off sjl-slimv as lispwords may be interefered with in vimclojure...
 " Bundle 'chrismetcalf/vim-rainbow'
 " Bundle 'kien/rainbow_parentheses.vim'
@@ -60,6 +59,10 @@ Bundle 'mayansmoke'
 " Bundle 'utl.vim'                                " interesting url handler plugin...
 " Bundle 'tomtom/tlib_vim'                        " required for viki
 " Bundle 'tomtom/viki_vim'                        " viki, another wiki... not sure about it.
+" Bundle 'VimClojure'                             " trying foreplay.vim
+Bundle 'guns/vim-clojure-static'
+Bundle 'tpope/vim-classpath'
+Bundle 'tpope/vim-foreplay'
 Bundle 'gberenfield/cljfold.vim'
 Bundle 'VOoM'
 
