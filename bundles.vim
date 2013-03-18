@@ -62,7 +62,7 @@ Bundle 'mayansmoke'
 " Bundle 'VimClojure'                             " trying foreplay.vim
 Bundle 'guns/vim-clojure-static'
 Bundle 'tpope/vim-classpath'
-Bundle 'tpope/vim-foreplay'
+Bundle 'tpope/vim-fireplace'
 Bundle 'gberenfield/cljfold.vim'
 Bundle 'VOoM'
 
