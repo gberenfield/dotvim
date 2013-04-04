@@ -65,6 +65,7 @@ Bundle 'tpope/vim-classpath'
 Bundle 'tpope/vim-fireplace'
 Bundle 'gberenfield/cljfold.vim'
 Bundle 'VOoM'
+Bundle 'derekwyatt/vim-scala'
 
 filet plugin on
 filetype plugin indent on
