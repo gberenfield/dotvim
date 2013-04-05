@@ -307,4 +307,10 @@ au BufNewFile,BufRead *.json set ft=json
 " json.dump' for 2-space indents vs 4.
 nmap <leader>jt <Esc>:%!python -c "exec(\"import sys\nimport json\njson.dump(json.load(sys.stdin),sys.stdout,sort_keys=True,indent=2)\")"<CR><Esc>:set filetype=json<CR>
 
+" my tab mappings
+nnoremap tt :tabnew<CR>
+nnoremap tc :tabclose<CR>
+nnoremap t] :tabn<CR>
+nnoremap t[ :tabp<CR>
+
 source ~/.vim/vimrc.private
