@@ -313,4 +313,7 @@ nnoremap tc :tabclose<CR>
 nnoremap t] :tabn<CR>
 nnoremap t[ :tabp<CR>
 
+" Tagbar
+nmap <F8> :TagbarToggle<CR>
+
 source ~/.vim/vimrc.private
