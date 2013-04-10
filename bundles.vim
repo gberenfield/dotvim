@@ -54,7 +54,6 @@ Bundle 'jamessan/vim-gnupg'
 Bundle 'vimwiki'
 Bundle 'MapFinder'
 Bundle 'flazz/vim-colorschemes'
-Bundle 'mayansmoke'
 " Bundle 'tpope/vim-classpath'                    " disabling vim-classpath as it does slowdown clj loads pretty badly...
 " Bundle 'utl.vim'                                " interesting url handler plugin...
 " Bundle 'tomtom/tlib_vim'                        " required for viki
