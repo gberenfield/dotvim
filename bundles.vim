@@ -66,6 +66,7 @@ Bundle 'gberenfield/cljfold.vim'
 Bundle 'VOoM'
 Bundle 'derekwyatt/vim-scala'
 Bundle 'majutsushi/tagbar'
+Bundle 'sjl/badwolf'
 
 filet plugin on
 filetype plugin indent on

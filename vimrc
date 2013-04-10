@@ -158,11 +158,16 @@ let g:gist_open_browser_after_post = 1
 set modeline
 set modelines=10
 
-" Default color scheme
-" colorscheme molokai
-" colorscheme advantage
-colorscheme af
+" 256 colors, dark bankground, get our theme ready
+set t_Co=256
 set background=dark
+
+" Default color scheme
+" colorscheme af
+" colorscheme ir_black
+" colorscheme molokai
+colorscheme badwolf
+
 
 " Directories for swp files
 set backupdir=~/.vim/backup
