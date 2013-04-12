@@ -20,25 +20,19 @@ Taglist requires exuberant-ctags to be installed on the system
 http://ctags.sourceforge.net
 
 
-VIMCLOJURE NOTES
-----------------
-http://www.vim.org/scripts/script.php?script_id=2501
+        VIMCLOJURE NOTES
+        ----------------
+        http://www.vim.org/scripts/script.php?script_id=2501
 
-in ~/.vim/bundle/VimClojure you'll need to manually install the client/ directory from the source repository
-https://bitbucket.org/kotarak/vimclojure
+        in ~/.vim/bundle/VimClojure you'll need to manually install the client/ directory from the source repository
+        https://bitbucket.org/kotarak/vimclojure
 
-The server can be downloaded at
-http://clojars.org/repo/vimclojure/server/
+        The server can be downloaded at
+        http://clojars.org/repo/vimclojure/server/
 
-The server setting below is machine dependent and should be stored in ~/.vimrc.local
-let vimclojure#NailgunClient = "/Users/mc/.vim/bundle/vimclojure/client/ng"
+        The server setting below is machine dependent and should be stored in ~/.vimrc.local
+        let vimclojure#NailgunClient = "/Users/mc/.vim/bundle/vimclojure/client/ng"
 
-OPENING FILES NICELY
---------------------
-Removed command-t. Not for me.
-Use peepopen (if on mac) or molly instead
 
-VIMPAGER
---------
-git://github.com/rkitover/vimpager.git
+* deprecating for vim-fireplace or (gasp) emacs
 
