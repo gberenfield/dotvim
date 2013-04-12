@@ -321,4 +321,19 @@ nnoremap t[ :tabp<CR>
 " Tagbar
 nmap <F8> :TagbarToggle<CR>
 
+" Mac-specific ala sjl
+" Copying text to the system clipboard.
+"
+" For some reason Vim no longer wants to talk to the OS X pasteboard through "*.
+" Computers are bullshit.
+function! g:FuckingCopyTheTextPlease()
+    let old_z = @z
+    normal! gv"zy
+    call system('pbcopy', @z)
+    let @z = old_z
+endfunction
+noremap <leader>p :silent! set paste<CR>"*p:set nopaste<CR>
+noremap <leader>p :r!pbpaste<cr>
+vnoremap <leader>y :<c-u>call g:FuckingCopyTheTextPlease()<cr>
+
 source ~/.vim/vimrc.private
