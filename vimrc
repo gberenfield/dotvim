@@ -162,8 +162,19 @@ set modelines=10
 set t_Co=256
 set background=dark
 
+" Default color scheme
+" colorscheme af
+" colorscheme ir_black
+" colorscheme molokai
+colorscheme badwolf
+let g:badwolf_tabline = 2
+let g:badwolf_html_link_underline = 0
+
 " Powerline
-set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim
+" set fillchars+=stl:\ ,stlnc:\
+" set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim " for powerline newer version
+let g:Powerline_symbols = 'fancy'
+let g:Powerline_cache_enabled = 1
 "  fix esc timeout from powerline statusline updates: https://powerline.readthedocs.org/en/latest/tipstricks.html#vim
 if ! has('gui_running')
   set ttimeoutlen=10
@@ -176,18 +187,9 @@ endif
 set laststatus=2 " Always display the statusline in all windows
 " set noshowmode " Hide the default mode text (e.g. -- INSERT -- below the statusline). causes probs on mac. see powerline tips in docs. may need in linux
 
-" Default color scheme
-" colorscheme af
-" colorscheme ir_black
-" colorscheme molokai
-let g:badwolf_tabline = 2
-let g:badwolf_html_link_underline = 0
-colorscheme badwolf
-
-
 " Directories for swp files
 set backupdir=~/.vim/backup
-set directory=~/.vim/backup
+set directory=~/.vim/swp
 
 " Turn off jslint errors by default
 let g:JSLintHighlightErrorLine = 0
@@ -195,11 +197,6 @@ let g:JSLintHighlightErrorLine = 0
 " MacVIM shift+arrow-keys behavior (required in .vimrc)
 let macvim_hig_shift_movement = 1
 
-" Powerline
-set fillchars+=stl:\ ,stlnc:\
-let g:Powerline_symbols = 'fancy'
-let g:Powerline_cache_enabled = 1
-let g:Powerline_colorscheme = 'badwolf'
 
 " % to bounce from do to end etc.
 runtime! macros/matchit.vim

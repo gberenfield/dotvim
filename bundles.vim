@@ -7,6 +7,7 @@ call vundle#rc()
 
 " let Vundle manage Vundle
 " required!
+Bundle 'Lokaltog/vim-powerline'
 Bundle 'gmarik/vundle'
 Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-rails'
@@ -67,7 +68,6 @@ Bundle 'VOoM'
 Bundle 'derekwyatt/vim-scala'
 Bundle 'majutsushi/tagbar'
 Bundle 'sjl/badwolf'
-Bundle 'Lokaltog/powerline'
 Bundle 'guns/paredit'
 
 filet plugin on
