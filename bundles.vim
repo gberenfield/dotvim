@@ -67,6 +67,8 @@ Bundle 'VOoM'
 Bundle 'derekwyatt/vim-scala'
 Bundle 'majutsushi/tagbar'
 Bundle 'sjl/badwolf'
+Bundle 'Lokaltog/powerline'
+Bundle 'guns/paredit'
 
 filet plugin on
 filetype plugin indent on

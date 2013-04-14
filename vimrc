@@ -162,10 +162,26 @@ set modelines=10
 set t_Co=256
 set background=dark
 
+" Powerline
+set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim
+"  fix esc timeout from powerline statusline updates: https://powerline.readthedocs.org/en/latest/tipstricks.html#vim
+if ! has('gui_running')
+  set ttimeoutlen=10
+  augroup FastEscape
+    autocmd!
+    au InsertEnter * set timeoutlen=0
+    au InsertLeave * set timeoutlen=1000
+  augroup END
+endif
+set laststatus=2 " Always display the statusline in all windows
+" set noshowmode " Hide the default mode text (e.g. -- INSERT -- below the statusline). causes probs on mac. see powerline tips in docs. may need in linux
+
 " Default color scheme
 " colorscheme af
 " colorscheme ir_black
 " colorscheme molokai
+let g:badwolf_tabline = 2
+let g:badwolf_html_link_underline = 0
 colorscheme badwolf
 
 
@@ -180,7 +196,10 @@ let g:JSLintHighlightErrorLine = 0
 let macvim_hig_shift_movement = 1
 
 " Powerline
+set fillchars+=stl:\ ,stlnc:\
 let g:Powerline_symbols = 'fancy'
+let g:Powerline_cache_enabled = 1
+let g:Powerline_colorscheme = 'badwolf'
 
 " % to bounce from do to end etc.
 runtime! macros/matchit.vim
@@ -207,9 +226,6 @@ let g:slimv_repl_wrap = 0
 " let g:slimv_swank_cmd = '!osascript -e "tell application \"Terminal\" to do script \"sbcl --load ~/.vim/slime/start-swank.lisp\""'
 " let g:slimv_swank_cmd = '! xterm -e sbcl --load ~/.vim/bundle/sjl-slimv/slime/start-swank.lisp &' " crashes on 64-bit macvim :-((
 let g:slimv_swank_cmd = '!osascript -e "tell application \"Terminal\" to do script \"sbcl --load ~/.vim/bundle/sjl-slimv/slime/start-swank.lisp\""'
-
-" Rainbox Parentheses {{{
-" map <F3> :RainbowParenthesesToggle<cr>
 
 " vimclojure settings
 let vimclojure#WantNailgun=1
@@ -249,7 +265,10 @@ nmap <LocalLeader>vs vip<LocalLeader>vs<CR>
 " let g:tslime_visual_mapping = '<localleader>t'
 " let g:tslime_vars_mapping = '<localleader>T'
 
-" " Better Rainbow Parentheses
+" paredit ( from slimv )
+let g:paredit_mode = 1
+
+" " " Better Rainbow Parentheses
 " let g:rbpt_colorpairs = [
 "     \ ['brown',       'RoyalBlue3'],
 "     \ ['Darkblue',    'SeaGreen3'],
@@ -270,6 +289,15 @@ nmap <LocalLeader>vs vip<LocalLeader>vs<CR>
 "     \ ]
 " 
 " let g:rbpt_max = 16
+" " au BufNewFile,BufReadPost *.clj RainbowParenthesesToggle
+" au VimEnter * RainbowParenthesesToggle
+" au Syntax * RainbowParenthesesLoadRound
+" " au Syntax * RainbowParenthesesLoadSquare
+" " au Syntax * RainbowParenthesesLoadBraces
+" " au BufNewFile,BufReadPost *.clj RainbowParenthesesLoadRound
+" " au BufNewFile,BufReadPost *.clj RainbowParenthesesLoadSquare
+" " au BufNewFile,BufReadPost *.clj RainbowParenthesesLoadBraces
+" " map <F3> :RainbowParenthesesToggle<cr>
 
 " Coffeescript folding settings
 au BufNewFile,BufReadPost *.coffee setl shiftwidth=2 expandtab
@@ -317,6 +345,7 @@ nnoremap tt :tabnew<CR>
 nnoremap tc :tabclose<CR>
 nnoremap t] :tabn<CR>
 nnoremap t[ :tabp<CR>
+
 
 " Tagbar
 nmap <F8> :TagbarToggle<CR>
