@@ -68,7 +68,6 @@ Bundle 'VOoM'
 Bundle 'derekwyatt/vim-scala'
 Bundle 'majutsushi/tagbar'
 Bundle 'sjl/badwolf'
-Bundle 'guns/paredit'
 Bundle 'terryma/vim-multiple-cursors'
 
 filet plugin on
