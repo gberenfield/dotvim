@@ -7,8 +7,8 @@ call vundle#rc()
 
 " let Vundle manage Vundle
 " required!
-Bundle 'Lokaltog/vim-powerline'
 Bundle 'gmarik/vundle'
+Bundle 'Lokaltog/vim-powerline'
 Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-rails'
 Bundle 'L9'
