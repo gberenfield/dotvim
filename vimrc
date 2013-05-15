@@ -362,4 +362,7 @@ noremap <leader>p :silent! set paste<CR>"*p:set nopaste<CR>
 noremap <leader>p :r!pbpaste<cr>
 vnoremap <leader>y :<c-u>call g:FuckingCopyTheTextPlease()<cr>
 
+" C-Language
+au FileType c setlocal fdm=syntax
+
 source ~/.vim/vimrc.private
