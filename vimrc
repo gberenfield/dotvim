@@ -363,6 +363,9 @@ noremap <leader>p :r!pbpaste<cr>
 vnoremap <leader>y :<c-u>call g:FuckingCopyTheTextPlease()<cr>
 
 " C-Language
-au FileType c setlocal fdm=syntax
+" au FileType c setlocal fdm=syntax
+au FileType c setlocal foldmethod=marker
+au FileType c setlocal foldmarker={,}
+
 
 source ~/.vim/vimrc.private
