@@ -367,5 +367,8 @@ vnoremap <leader>y :<c-u>call g:FuckingCopyTheTextPlease()<cr>
 au FileType c setlocal foldmethod=marker
 au FileType c setlocal foldmarker={,}
 
+" Bash/SH
+au FileType sh setlocal foldmethod=marker
+au FileType sh setlocal foldmarker={,}
 
 source ~/.vim/vimrc.private
