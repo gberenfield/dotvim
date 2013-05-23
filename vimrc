@@ -189,7 +189,7 @@ set laststatus=2 " Always display the statusline in all windows
 
 " Directories for swp files
 set backupdir=~/.vim/backup
-set directory=~/.vim/swp
+set directory=~/.vim/backup
 
 " Turn off jslint errors by default
 let g:JSLintHighlightErrorLine = 0
