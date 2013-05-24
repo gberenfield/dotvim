@@ -11,6 +11,8 @@ ln -s ~/dotvim/vimrc ~/.vimrc
 ln -s ~/dotvim/gvimrc ~/.gvimrc
 ln -s ~/dotvim/en.utf-8.add ~/dotvim/bundle/vundle/spell
 mkdir -p ~/dotvim/backup
+mkdir -p ~/dotvim/snippets
+ln -s ~/dotfiles/private/vim-snippets/mail.snippets ~/dotvim/snippets
 
 git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
 vim -u ~/.vim/bundles.vim +BundleInstall +q
