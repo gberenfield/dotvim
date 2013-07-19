@@ -371,4 +371,9 @@ au FileType c setlocal foldmarker={,}
 au FileType sh setlocal foldmethod=marker
 au FileType sh setlocal foldmarker={,}
 
+let g:netrw_browserx_viewer="dwb"
+
+" Sass/SCSS
+autocmd BufRead,BufNewFile *.css,*.scss,*.less setlocal foldmethod=marker foldmarker={,}
+
 source ~/.vim/vimrc.private
