@@ -29,7 +29,7 @@ Bundle 'ddollar/nerdcommenter'
 Bundle 'taglist.vim'
 Bundle 'ervandew/supertab'
 Bundle 'timcharper/textile.vim'
-Bundle 'taq/vim-rspec'
+Bundle 'thoughtbot/vim-rspec'
 Bundle 'ZoomWin'
 Bundle 'tpope/vim-unimpaired'
 Bundle 'searchfold.vim'
@@ -69,6 +69,7 @@ Bundle 'derekwyatt/vim-scala'
 Bundle 'majutsushi/tagbar'
 Bundle 'sjl/badwolf'
 Bundle 'terryma/vim-multiple-cursors'
+Bundle 'jceb/vim-orgmode'
 
 filet plugin on
 filetype plugin indent on
