@@ -7,13 +7,13 @@ call vundle#rc()
 
 " let Vundle manage Vundle
 " required!
-Bundle 'gmarik/vundle'                            " Bundle maintainer
-Bundle 'Lokaltog/vim-powerline'                   " powerline
-Bundle 'tpope/vim-fugitive'                       " git wrapper
-Bundle 'tpope/vim-rails'                          " rails foo
-Bundle 'L9'                                       " L9 used by other plugins...? really??
-Bundle 'vim-ruby/vim-ruby'                        " ruby foo
-Bundle 'tpope/vim-surround'                       " surround text helper
+Bundle 'gmarik/vundle'
+Bundle 'Lokaltog/vim-powerline'
+Bundle 'tpope/vim-fugitive'
+Bundle 'tpope/vim-rails'
+Bundle 'L9'
+Bundle 'vim-ruby/vim-ruby'
+Bundle 'tpope/vim-surround'
 Bundle 'tpope/vim-git'
 Bundle 'tpope/vim-haml'
 Bundle 'tpope/vim-cucumber'
@@ -53,7 +53,7 @@ Bundle 'nathanaelkane/vim-indent-guides'
 Bundle 'restore_view.vim'
 Bundle 'jamessan/vim-gnupg'
 Bundle 'vimwiki'
-Bundle 'MapFinder'                                " show what a key's mapped to...
+Bundle 'MapFinder'
 Bundle 'flazz/vim-colorschemes'
 " Bundle 'tpope/vim-classpath'                    " disabling vim-classpath as it does slowdown clj loads pretty badly...
 " Bundle 'utl.vim'                                " interesting url handler plugin...
