@@ -305,9 +305,7 @@ au bufnewfile,bufreadpost *.coffee setl foldlevel=1         "this is just what i
 au bufnewfile,bufreadpost *.coffee setl foldignore="#"
 
 " Clojure folding settings
-" au BufNewFile,BufReadPost *.clj setl shiftwidth=2 expandtab nofoldenable
-" au BufNewFile,BufReadPost *.clj setl foldmethod=indent   "fold based on indent
-" au BufNewFile,BufReadPost *.ccj setl foldnestmax=1      "deepest fold is 10 levels
+let g:clojure_foldwords = "def,ns,comment"
 
 " per http://vim.wikia.com/wiki/Make_views_automatic
 set viewoptions=cursor,folds,slash,unix
