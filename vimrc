@@ -374,4 +374,6 @@ let g:netrw_browserx_viewer="dwb"
 " Sass/SCSS
 autocmd BufRead,BufNewFile *.css,*.scss,*.less setlocal foldmethod=marker foldmarker={,}
 
+" vcards
+au BufNewFile,BufRead *.vcf set filetype=vcard
 source ~/.vim/vimrc.private
