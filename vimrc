@@ -376,4 +376,8 @@ autocmd BufRead,BufNewFile *.css,*.scss,*.less setlocal foldmethod=marker foldma
 
 " vcards
 au BufNewFile,BufRead *.vcf set filetype=vcard
+" adr
+au BufNewFile,BufRead *.adr set filetype=adr
+au FileType adr set foldmethod=syntax
+
 source ~/.vim/vimrc.private
