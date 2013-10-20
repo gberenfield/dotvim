@@ -170,21 +170,25 @@ colorscheme badwolf
 let g:badwolf_tabline = 2
 let g:badwolf_html_link_underline = 0
 
-" Powerline
-" set fillchars+=stl:\ ,stlnc:\
-" set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim " for powerline newer version
-let g:Powerline_symbols = 'fancy'
-let g:Powerline_cache_enabled = 1
-"  fix esc timeout from powerline statusline updates: https://powerline.readthedocs.org/en/latest/tipstricks.html#vim
-if ! has('gui_running')
-  set ttimeoutlen=10
-  augroup FastEscape
-    autocmd!
-    au InsertEnter * set timeoutlen=0
-    au InsertLeave * set timeoutlen=1000
-  augroup END
-endif
-set laststatus=2 " Always display the statusline in all windows
+" Airline powerline plugin
+let g:airline_powerline_fonts = 1
+let g:airline#extensions#tabline#enabled = 1
+
+" " Powerline
+" " set fillchars+=stl:\ ,stlnc:\
+" " set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim " for powerline newer version
+" let g:Powerline_symbols = 'fancy'
+" let g:Powerline_cache_enabled = 1
+" "  fix esc timeout from powerline statusline updates: https://powerline.readthedocs.org/en/latest/tipstricks.html#vim
+" if ! has('gui_running')
+"   set ttimeoutlen=10
+"   augroup FastEscape
+"     autocmd!
+"     au InsertEnter * set timeoutlen=0
+"     au InsertLeave * set timeoutlen=1000
+"   augroup END
+" endif
+" set laststatus=2 " Always display the statusline in all windows
 " set noshowmode " Hide the default mode text (e.g. -- INSERT -- below the statusline). causes probs on mac. see powerline tips in docs. may need in linux
 
 " Directories for swp files
