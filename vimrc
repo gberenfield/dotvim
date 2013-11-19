@@ -309,7 +309,7 @@ au bufnewfile,bufreadpost *.coffee setl foldlevel=1         "this is just what i
 au bufnewfile,bufreadpost *.coffee setl foldignore="#"
 
 " Clojure folding settings
-let g:clojure_foldwords = "def,ns,comment"
+let g:clojure_foldwords = "def,ns,comment,add-filter!"
 
 " per http://vim.wikia.com/wiki/Make_views_automatic
 set viewoptions=cursor,folds,slash,unix
