@@ -71,6 +71,7 @@ Bundle 'majutsushi/tagbar'
 Bundle 'sjl/badwolf'
 Bundle 'terryma/vim-multiple-cursors'
 Bundle 'jceb/vim-orgmode'
+Bundle 'guns/vim-slamhound'
 
 filet plugin on
 filetype plugin indent on
