@@ -8,7 +8,6 @@ call vundle#rc()
 " let Vundle manage Vundle
 " required!
 Bundle 'gmarik/vundle'
-" Bundle 'Lokaltog/vim-powerline'
 Bundle 'bling/vim-airline'
 Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-rails'
@@ -43,10 +42,6 @@ Bundle 'c9s/bufexplorer'
 Bundle 'tpope/vim-repeat'
 Bundle 'tomtom/tcomment_vim'
 Bundle 'jQuery'
-" Bundle 'benmills/vimux'
-" Bundle 'gberenfield/sjl-slimv'                  " turning off sjl-slimv as lispwords may be interefered with in vimclojure...
-" Bundle 'chrismetcalf/vim-rainbow'
-" Bundle 'kien/rainbow_parentheses.vim'
 Bundle 'sjl/gundo.vim'
 Bundle 'YankRing.vim'
 Bundle 'kien/ctrlp.vim'
@@ -56,15 +51,12 @@ Bundle 'jamessan/vim-gnupg'
 Bundle 'vimwiki'
 Bundle 'MapFinder'
 Bundle 'flazz/vim-colorschemes'
-" Bundle 'tpope/vim-classpath'                    " disabling vim-classpath as it does slowdown clj loads pretty badly...
 " Bundle 'utl.vim'                                " interesting url handler plugin...
-" Bundle 'tomtom/tlib_vim'                        " required for viki
-" Bundle 'tomtom/viki_vim'                        " viki, another wiki... not sure about it.
-" Bundle 'VimClojure'                             " trying foreplay.vim
-Bundle 'guns/vim-clojure-static'
+Bundle 'kien/rainbow_parentheses.vim'
 Bundle 'tpope/vim-classpath'
 Bundle 'tpope/vim-fireplace'
 Bundle 'gberenfield/cljfold.vim'
+Bundle 'guns/vim-clojure-static'
 Bundle 'VOoM'
 Bundle 'derekwyatt/vim-scala'
 Bundle 'majutsushi/tagbar'
@@ -72,6 +64,8 @@ Bundle 'sjl/badwolf'
 Bundle 'terryma/vim-multiple-cursors'
 Bundle 'jceb/vim-orgmode'
 Bundle 'guns/vim-slamhound'
+Bundle 'dgrnbrg/vim-redl'
+Bundle 'guns/vim-sexp'
 
 filet plugin on
 filetype plugin indent on

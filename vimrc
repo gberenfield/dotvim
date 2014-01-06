@@ -11,7 +11,6 @@ set number
 set ruler
 syntax on
 
-
 " Set encoding
 set encoding=utf-8
 
@@ -57,14 +56,6 @@ let g:CommandTMaxHeight=20
 
 " ZoomWin configuration
 map <Leader>] :ZoomWin<CR>
-
-" PeepOpen
-" bye peepopen, hi ctrl-p?
-" if has("gui_macvim")
-"   macmenu &File.New\ Tab key=<nop>
-" end
-" map <leader><leader> <Plug>PeepOpen
-" end
 
 " Ctrlp
 let g:ctrlp_working_path_mode = 0
@@ -142,7 +133,7 @@ vmap <C-Down> ]egv
 
 " Enable syntastic syntax checking
 let g:syntastic_enable_signs = 1
-let g:syntastic_quiet_warnings = 0
+let g:syntastic_quiet_messages = {'level': 'warnings'}
 let g:syntastic_enable_highlighting = 1
 
 " gist-vim defaults
@@ -174,23 +165,6 @@ let g:badwolf_html_link_underline = 0
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#enabled = 1
 
-" " Powerline
-" " set fillchars+=stl:\ ,stlnc:\
-" " set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim " for powerline newer version
-" let g:Powerline_symbols = 'fancy'
-" let g:Powerline_cache_enabled = 1
-" "  fix esc timeout from powerline statusline updates: https://powerline.readthedocs.org/en/latest/tipstricks.html#vim
-" if ! has('gui_running')
-"   set ttimeoutlen=10
-"   augroup FastEscape
-"     autocmd!
-"     au InsertEnter * set timeoutlen=0
-"     au InsertLeave * set timeoutlen=1000
-"   augroup END
-" endif
-" set laststatus=2 " Always display the statusline in all windows
-" set noshowmode " Hide the default mode text (e.g. -- INSERT -- below the statusline). causes probs on mac. see powerline tips in docs. may need in linux
-
 " Directories for swp files
 set backupdir=~/.vim/backup
 set directory=~/.vim/backup
@@ -201,73 +175,15 @@ let g:JSLintHighlightErrorLine = 0
 " MacVIM shift+arrow-keys behavior (required in .vimrc)
 let macvim_hig_shift_movement = 1
 
-
 " % to bounce from do to end etc.
 runtime! macros/matchit.vim
 
 " Show (partial) command in the status line
 set showcmd
 
-" Include user's local vim config
-if filereadable(expand("~/.vimrc.local"))
-  source ~/.vimrc.local
-endif
-
-" " SLIMV REPL syntax highlighting
-" let g:slimv_repl_syntax = 1
-" " let g:lisp_rainbow = 1
-" " disable slimv's paredit mode..
-let g:paredit_mode = 0
-" Use a swank command that works, and doesn't require new app windows.
-" let g:slimv_swank_clojure = '!dtach -n /tmp/dtach-swank.sock -r winch lein swank'
-let g:slimv_repl_name = 'SLIMV.REPL'
-let g:slimv_repl_split = 4
-" let g:slimv_repl_syntax = 0
-let g:slimv_repl_wrap = 0
-" let g:slimv_swank_cmd = '!osascript -e "tell application \"Terminal\" to do script \"sbcl --load ~/.vim/slime/start-swank.lisp\""'
-" let g:slimv_swank_cmd = '! xterm -e sbcl --load ~/.vim/bundle/sjl-slimv/slime/start-swank.lisp &' " crashes on 64-bit macvim :-((
-let g:slimv_swank_cmd = '!osascript -e "tell application \"Terminal\" to do script \"sbcl --load ~/.vim/bundle/sjl-slimv/slime/start-swank.lisp\""'
-
-" vimclojure settings
-let vimclojure#WantNailgun=1
-" VimClojure ParenRainbow coloring
-let g:vimclojure#ParenRainbow=1
-" VimClojure DynamicHighlight.. not sure what I gain here..
-let g:vimclojure#DynamicHighLighting=1
-let g:vimclojure#HighlightBuiltins=1
-let vimclojure#HighlightBuiltins=1
-" VimClojure's indenting ala 'lispwords'
-let g:vimclojure#FuzzyIndent=1
-
-" per sjl's vimrc
-" let vimclojure#NailgunClient = "/Users/".$username."/.vim/bundle/vimclojure/client/ng"
-let vimclojure#NailgunClient = $HOME."/.vim/bundle/VimClojure/client/ng"
-nmap <Leader>rT :call vimclojure#RunTests('n')<CR>
-
 " Yankring
 let g:yankring_history_file = '.yankring_history'
 let g:yankring_manual_clipboard_check = 0
-
-" vimux
-" Inspect runner pane map
-map <Leader>vi :VimuxInspectRunner<CR>
-" Run last command executed by VimuxRunCommand
-map <Leader>vl :VimuxRunLastCommand<CR>
-" Prompt for a command to run
-map <LocalLeader>vp :VimuxPromptCommand<CR>
-" If text is selected, save it in the v buffer and send that buffer it to tmux
-vmap <LocalLeader>vs "vy :call VimuxRunCommand(@v . "\n", 0)<CR>
-" Select current paragraph and send it to tmux
-nmap <LocalLeader>vs vip<LocalLeader>vs<CR>
-
-" TSlime
-" let g:tslime_ensure_trailing_newlines = 1
-" let g:tslime_normal_mapping = '<localleader>t'
-" let g:tslime_visual_mapping = '<localleader>t'
-" let g:tslime_vars_mapping = '<localleader>T'
-
-" paredit ( from slimv )
-let g:paredit_mode = 1
 
 " " " Better Rainbow Parentheses
 " let g:rbpt_colorpairs = [
@@ -308,18 +224,10 @@ au BufNewFile,BufReadPost *.coffee setl foldnestmax=10      "deepest fold is 10 
 au bufnewfile,bufreadpost *.coffee setl foldlevel=1         "this is just what i use
 au bufnewfile,bufreadpost *.coffee setl foldignore="#"
 
-" Clojure folding settings
-let g:clojure_foldwords = "def,ns,comment,add-filter!"
-
 " per http://vim.wikia.com/wiki/Make_views_automatic
 set viewoptions=cursor,folds,slash,unix
 let g:skipview_files = ['.git*']
 
-let g:slime_target = "tmux"
-
-" if exists('loaded_clojurefolding') || &cp
-"     finish
-" endif
 " vim-indent-guides
 let g:indent_guides_auto_colors = 1
 " autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guibg=red   ctermbg=3
@@ -344,7 +252,6 @@ nnoremap tt :tabnew<CR>
 nnoremap tc :tabclose<CR>
 nnoremap t] :tabn<CR>
 nnoremap t[ :tabp<CR>
-
 
 " Tagbar
 nmap <F8> :TagbarToggle<CR>
