@@ -291,4 +291,65 @@ au BufNewFile,BufRead *.vcf set filetype=vcard
 au BufNewFile,BufRead *.adr set filetype=adr
 au FileType adr set foldmethod=syntax
 
+" Clojure folding settings
+let g:clojure_foldwords = "def,ns,comment,add-filter!"
+
+"vim-slamhound for clojure
+nnoremap <LocalLeader>sh :Slamhound<CR>
+
+" Plugin: vim-clojure-static
+let g:clojure_align_multiline_strings = 1
+let g:clojure_fuzzy_indent_patterns = [
+    \ '^with-', '^def', '^let', '^when-', 'ing$', '-for$', '^for-',
+    \ '^fn', '-fn$', '^at-', '-to$', '-loop$', '\v(cond|as)-\>\*', '^dosql$'
+    \ ]
+let g:clojure_fuzzy_indent_blacklist = ['\v^with-%(meta|out-str|loading-context)$']
+
+let g:rbpt_colorpairs = [
+    \ [235, '#1c1c1c'],
+    \ [235, '#1c1c1c'],
+    \ [235, '#1c1c1c'],
+    \ [235, '#1c1c1c'],
+    \ [235, '#1c1c1c'],
+    \ [235, '#1c1c1c'],
+    \ [235, '#1c1c1c'],
+    \ [235, '#1c1c1c'],
+    \ [235, '#1c1c1c'],
+    \ [235, '#1c1c1c'],
+    \ [235, '#1c1c1c'],
+    \ [235, '#1c1c1c'],
+    \ [235, '#1c1c1c'],
+    \ [235, '#1c1c1c'],
+    \ [235, '#1c1c1c'],
+    \ [235, '#1c1c1c'],
+    \ [235, '#1c1c1c'],
+    \ [235, '#1c1c1c'],
+    \ [235, '#1c1c1c'],
+    \ [235, '#1c1c1c'],
+    \ [236, '#303030'],
+    \ [237, '#3a3a3a'],
+    \ [238, '#444444'],
+    \ [239, '#4e4e4e'],
+    \ [240, '#585858'],
+    \ [241, '#606060'],
+    \ [242, '#666666'],
+    \ [243, '#767676'],
+    \ [244, '#808080'],
+    \ [245, '#8a8a8a']]
+let g:rbpt_max = len(g:rbpt_colorpairs)
+
+" using guns vim stuff for clojure
+autocmd FileType clojure ClojureBufferSetup
+
+source ~/.vim/local/commands.vim
+" Include user's local vim config
+if filereadable(expand("~/.vimrc.local"))
+  source ~/.vimrc.local
+endif
 source ~/.vim/vimrc.private
+
+if has('gui_running')
+    source ~/.vim/local/gvimrc.vim
+else
+    source ~/.vim/local/tty.vim
+endif
