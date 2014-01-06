@@ -52,7 +52,7 @@ Bundle 'vimwiki'
 Bundle 'MapFinder'
 Bundle 'flazz/vim-colorschemes'
 " Bundle 'utl.vim'                                " interesting url handler plugin...
-Bundle 'kien/rainbow_parentheses.vim'
+" Bundle 'kien/rainbow_parentheses.vim'
 Bundle 'tpope/vim-classpath'
 Bundle 'tpope/vim-fireplace'
 Bundle 'gberenfield/cljfold.vim'

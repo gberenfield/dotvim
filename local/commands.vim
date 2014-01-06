@@ -54,11 +54,11 @@ function! s:LispBufferSetup()
     SetWhitespace 2 8
     setlocal foldmethod=expr foldexpr=LispFoldExpr(v:lnum)
 
-    " Rainbow parens
-    call rainbow_parentheses#load(0)
-    call rainbow_parentheses#load(1)
-    call rainbow_parentheses#load(2)
-    call rainbow_parentheses#activate()
+    " " Rainbow parens
+    " call rainbow_parentheses#load(0)
+    " call rainbow_parentheses#load(1)
+    " call rainbow_parentheses#load(2)
+    " call rainbow_parentheses#activate()
 
     noremap  <silent><buffer> <4-CR> A<Space>;<Space>
     noremap! <silent><buffer> <4-CR> <C-\><C-o>A<Space>;<Space>
