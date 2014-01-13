@@ -66,6 +66,7 @@ Bundle 'jceb/vim-orgmode'
 Bundle 'guns/vim-slamhound'
 Bundle 'dgrnbrg/vim-redl'
 Bundle 'guns/vim-sexp'
+Bundle 'guns/xterm-color-table.vim'
 
 filet plugin on
 filetype plugin indent on
