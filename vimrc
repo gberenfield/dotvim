@@ -47,15 +47,16 @@ set laststatus=2
 " This is likely a bludgeon to solve some other issue, but it works
 set noequalalways
 
-" NERDTree configuration
-let NERDTreeIgnore=['\.pyc$', '\.rbc$', '\~$']
-map <Leader>n :NERDTreeToggle<CR>
-
-" Command-T configuration
-let g:CommandTMaxHeight=20
+" for lusty-juggler stuff
+set hidden
+" faster lusty-juggler mapping
+nmap <Leader><space> \lj
 
 " ZoomWin configuration
 map <Leader>] :ZoomWin<CR>
+
+" map PP to paste in system/linux clipboard
+nmap PP "*p
 
 " Ctrlp
 let g:ctrlp_working_path_mode = 0
