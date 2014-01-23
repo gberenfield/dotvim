@@ -53,7 +53,7 @@ set hidden
 nmap <Leader><space> \lj
 
 " ZoomWin configuration
-map <Leader>] :ZoomWin<CR>
+map <Leader>c :ZoomWin<CR>
 
 " map PP to paste in system/linux clipboard
 nmap PP "*p
