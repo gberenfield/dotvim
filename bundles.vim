@@ -38,7 +38,6 @@ Bundle 'scrooloose/syntastic'
 Bundle 'ajf/puppet-vim'
 Bundle 'mattn/gist-vim'
 Bundle 'Arduino-syntax-file'
-Bundle 'c9s/bufexplorer'
 Bundle 'tpope/vim-repeat'
 Bundle 'tomtom/tcomment_vim'
 Bundle 'jQuery'
@@ -68,7 +67,6 @@ Bundle 'dgrnbrg/vim-redl'
 Bundle 'guns/vim-sexp'
 Bundle 'guns/xterm-color-table.vim'
 Bundle 'tpope/vim-sexp-mappings-for-regular-people'
-Bundle 'LustyJuggler'
 
 filet plugin on
 filetype plugin indent on

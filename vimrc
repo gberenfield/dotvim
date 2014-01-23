@@ -47,10 +47,6 @@ set laststatus=2
 " This is likely a bludgeon to solve some other issue, but it works
 set noequalalways
 
-" for lusty-juggler stuff
-set hidden
-" faster lusty-juggler mapping
-nmap <Leader><space> \lj
 
 " ZoomWin configuration
 map <Leader>c :ZoomWin<CR>
@@ -65,7 +61,7 @@ let g:ctrlp_custom_ignore = {
   \ 'dir':  '\.git$\|\.hg$\|\.svn$\|tmp$|cache',
   \ }
 let g:ctrlp_map = '<leader><leader>'
-
+nmap <leader><space> :CtrlPBuffer<CR>
 
 " CTags
 " map <Leader>rt :!ctags --extra=+f -R *<CR><CR>
