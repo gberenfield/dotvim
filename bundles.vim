@@ -67,6 +67,7 @@ Bundle 'dgrnbrg/vim-redl'
 Bundle 'guns/vim-sexp'
 Bundle 'guns/xterm-color-table.vim'
 Bundle 'tpope/vim-sexp-mappings-for-regular-people'
+Bundle 'gregsexton/MatchTag'
 
 filet plugin on
 filetype plugin indent on
