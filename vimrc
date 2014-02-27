@@ -307,8 +307,8 @@ let g:clojure_fuzzy_indent_patterns = [
 let g:clojure_fuzzy_indent_blacklist = ['\v^with-%(meta|out-str|loading-context)$']
 
 " guns vim stuff for clojure, salt to taste
-" autocmd FileType clojure ClojureBufferSetup
-" source ~/.vim/local/commands.vim
+autocmd FileType clojure ClojureBufferSetup
+source ~/.vim/local/commands.vim
 
 " Include user's local vim config
 if filereadable(expand("~/.vimrc.local"))
