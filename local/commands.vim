@@ -68,46 +68,46 @@ command! -bar ClojureBufferSetup call <SID>ClojureBufferSetup() "{{{1
 function! s:ClojureBufferSetup()
     LispBufferSetup
 
-    vmap     <silent><buffer> <Leader><Leader> <Plug>FireplacePrint
-    nmap     <silent><buffer> <Leader><Leader> <Plug>FireplacePrint<Plug>(sexp_outer_list)``
-    imap     <silent><buffer> <Leader><Leader> <C-\><C-o><C-\><C-n><Leader><Leader>
-
-    nmap     <silent><buffer> <Leader>X        <Plug>FireplacePrint<Plug>(sexp_outer_top_list)``
-    imap     <silent><buffer> <Leader>X        <C-\><C-o><C-\><C-n><Leader>X
-
-    nmap     <silent><buffer> <Leader>x        <Plug>FireplacePrint<Plug>(sexp_inner_element)``
-    imap     <silent><buffer> <Leader>x        <C-\><C-o><C-\><C-n><Leader>x
-
-    nnoremap <silent><buffer> <Leader>r        :Require<CR>
-    nnoremap <silent><buffer> <Leader>R        :call fireplace#eval('(user/refresh)')<CR>
-    nnoremap <silent><buffer> <LocalLeader>C   :Connect<Space>
-    nnoremap <silent><buffer> <LocalLeader>cp  :call fireplace#eval('(user/classpath)')<CR>
-    nnoremap <silent><buffer> <LocalLeader>cs  :call <SID>ClojureCheatSheet('.')<CR>
-    nnoremap <silent><buffer> <LocalLeader>cS  :call <SID>ClojureCheatSheet(input('Namespace filter: '))<CR>
-    nnoremap <silent><buffer> <LocalLeader>e   :call <SID>ClojurePprint('*e')<CR>
-    nnoremap <silent><buffer> <LocalLeader>l   :Last<CR>
-    nnoremap <silent><buffer> <LocalLeader>m1  :call <SID>ClojureMacroexpand(0)<CR>
-    nnoremap <silent><buffer> <LocalLeader>me  :call <SID>ClojureMacroexpand(1)<CR>
-    nnoremap <silent><buffer> <LocalLeader>mE  :call <SID>ClojureMacroexpand(2)<CR>
-    nnoremap <silent><buffer> <LocalLeader>p   :call <SID>ClojurePprint('*1')<CR>
-    nnoremap <silent><buffer> <LocalLeader>R   :Repl<CR>
-    nnoremap <silent><buffer> <LocalLeader>r   :ReplHere<CR>
-    nnoremap <silent><buffer> <LocalLeader>ss  :call fireplace#eval('(user.system/boot)')<CR>
-    nnoremap <silent><buffer> <LocalLeader>sS  :call fireplace#eval('(user.system/stop)')<CR>
-    nnoremap <silent><buffer> <LocalLeader>sr  :call fireplace#eval('(user.system/restart)')<CR>
-    nnoremap <silent><buffer> <LocalLeader>si  :call <SID>ClojurePprint('@user.system/instance')<CR>
-    nnoremap <silent><buffer> <LocalLeader>sl  :call <SID>ClojurePprint('@system/log')<CR>
-    nnoremap <silent><buffer> <LocalLeader>sc  :call <SID>ClojurePprint('system/config')<CR>
-    nnoremap <silent><buffer> <LocalLeader>sh  :Slamhound<CR>
-    nnoremap <silent><buffer> <LocalLeader>st  :call <SID>ClojureStackTrace()<CR>
-    nnoremap <silent><buffer> <LocalLeader>tr  :call fireplace#eval('(user/toggle-warn-on-reflection!)')<CR>
-    nnoremap <silent><buffer> <LocalLeader>ts  :call <SID>ClojureTypeScaffold()<CR>
-    nnoremap <silent><buffer> <LocalLeader>tt  :call <SID>ClojureRunTests(0)<CR>
-    nnoremap <silent><buffer> <LocalLeader>tT  :call <SID>ClojureRunTests(1)<CR>
-    nnoremap <silent><buffer> <LocalLeader>tv  :call fireplace#eval('(user/toggle-schema-validation!)')<CR>
-    nnoremap <silent><buffer> <LocalLeader>tw  :call fireplace#eval('(user/toggle-warnings! true)')<CR>
-    nnoremap <silent><buffer> <LocalLeader>tW  :call fireplace#eval('(user/toggle-warnings! false)')<CR>
-    nnoremap <silent><buffer> <LocalLeader>u   :call fireplace#eval('(load-file "' . expand('~/.lein/user.clj') . '")')<CR>
+"     vmap     <silent><buffer> <Leader><Leader> <Plug>FireplacePrint
+"     nmap     <silent><buffer> <Leader><Leader> <Plug>FireplacePrint<Plug>(sexp_outer_list)``
+"     imap     <silent><buffer> <Leader><Leader> <C-\><C-o><C-\><C-n><Leader><Leader>
+"
+"     nmap     <silent><buffer> <Leader>X        <Plug>FireplacePrint<Plug>(sexp_outer_top_list)``
+"     imap     <silent><buffer> <Leader>X        <C-\><C-o><C-\><C-n><Leader>X
+"
+"     nmap     <silent><buffer> <Leader>x        <Plug>FireplacePrint<Plug>(sexp_inner_element)``
+"     imap     <silent><buffer> <Leader>x        <C-\><C-o><C-\><C-n><Leader>x
+"
+"     nnoremap <silent><buffer> <Leader>r        :Require<CR>
+"     nnoremap <silent><buffer> <Leader>R        :call fireplace#eval('(user/refresh)')<CR>
+"     nnoremap <silent><buffer> <LocalLeader>C   :Connect<Space>
+"     nnoremap <silent><buffer> <LocalLeader>cp  :call fireplace#eval('(user/classpath)')<CR>
+"     nnoremap <silent><buffer> <LocalLeader>cs  :call <SID>ClojureCheatSheet('.')<CR>
+"     nnoremap <silent><buffer> <LocalLeader>cS  :call <SID>ClojureCheatSheet(input('Namespace filter: '))<CR>
+"     nnoremap <silent><buffer> <LocalLeader>e   :call <SID>ClojurePprint('*e')<CR>
+"     nnoremap <silent><buffer> <LocalLeader>l   :Last<CR>
+"     nnoremap <silent><buffer> <LocalLeader>m1  :call <SID>ClojureMacroexpand(0)<CR>
+"     nnoremap <silent><buffer> <LocalLeader>me  :call <SID>ClojureMacroexpand(1)<CR>
+"     nnoremap <silent><buffer> <LocalLeader>mE  :call <SID>ClojureMacroexpand(2)<CR>
+"     nnoremap <silent><buffer> <LocalLeader>p   :call <SID>ClojurePprint('*1')<CR>
+"     nnoremap <silent><buffer> <LocalLeader>R   :Repl<CR>
+"     nnoremap <silent><buffer> <LocalLeader>r   :ReplHere<CR>
+"     nnoremap <silent><buffer> <LocalLeader>ss  :call fireplace#eval('(user.system/boot)')<CR>
+"     nnoremap <silent><buffer> <LocalLeader>sS  :call fireplace#eval('(user.system/stop)')<CR>
+"     nnoremap <silent><buffer> <LocalLeader>sr  :call fireplace#eval('(user.system/restart)')<CR>
+"     nnoremap <silent><buffer> <LocalLeader>si  :call <SID>ClojurePprint('@user.system/instance')<CR>
+"     nnoremap <silent><buffer> <LocalLeader>sl  :call <SID>ClojurePprint('@system/log')<CR>
+"     nnoremap <silent><buffer> <LocalLeader>sc  :call <SID>ClojurePprint('system/config')<CR>
+"     nnoremap <silent><buffer> <LocalLeader>sh  :Slamhound<CR>
+"     nnoremap <silent><buffer> <LocalLeader>st  :call <SID>ClojureStackTrace()<CR>
+"     nnoremap <silent><buffer> <LocalLeader>tr  :call fireplace#eval('(user/toggle-warn-on-reflection!)')<CR>
+"     nnoremap <silent><buffer> <LocalLeader>ts  :call <SID>ClojureTypeScaffold()<CR>
+"     nnoremap <silent><buffer> <LocalLeader>tt  :call <SID>ClojureRunTests(0)<CR>
+"     nnoremap <silent><buffer> <LocalLeader>tT  :call <SID>ClojureRunTests(1)<CR>
+"     nnoremap <silent><buffer> <LocalLeader>tv  :call fireplace#eval('(user/toggle-schema-validation!)')<CR>
+"     nnoremap <silent><buffer> <LocalLeader>tw  :call fireplace#eval('(user/toggle-warnings! true)')<CR>
+"     nnoremap <silent><buffer> <LocalLeader>tW  :call fireplace#eval('(user/toggle-warnings! false)')<CR>
+"     nnoremap <silent><buffer> <LocalLeader>u   :call fireplace#eval('(load-file "' . expand('~/.lein/user.clj') . '")')<CR>
 endfunction
 
 function! s:ClojurePprint(expr)
