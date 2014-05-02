@@ -290,10 +290,12 @@ au FileType adr set foldmethod=syntax
 
 " Clojure folding settings
 let g:clojure_foldwords = "def,ns,comment,add-filter!"
+" Clojure filetype for cljx files.. not great but until better comes along...
+au BufNewFile,BufRead *.cljx set filetype=clojure
 
 " vim-fireplace
 " evulate inner () with 'cpc'
-au BufNewFile,BufRead *.clj,*.cljs map cpc cpa)
+au BufNewFile,BufRead *.clj,*.cljs,*.cljx map cpc cpa)
 
 "vim-slamhound for clojure
 nnoremap <LocalLeader>sh :Slamhound<CR>
