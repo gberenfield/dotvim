@@ -323,3 +323,6 @@ if has('gui_running')
 else
     source ~/.vim/local/tty.vim
 endif
+
+" Open markdown files with dwb. uses 'python_markdown' package in Arch
+autocmd BufEnter *.md exe 'noremap <F5> :!markdown_py %:p >/tmp/md-temp.html; dwb /tmp/md-temp.html<CR>'
