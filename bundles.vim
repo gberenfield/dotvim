@@ -72,6 +72,7 @@ Bundle 'guns/xterm-color-table.vim'
 Bundle 'tpope/vim-sexp-mappings-for-regular-people'
 Bundle 'gregsexton/MatchTag'
 Bundle 'guns/vim-clojure-highlight'
+Bundle 'typedclojure/vim-typedclojure'
 
 filet plugin on
 filetype plugin indent on
