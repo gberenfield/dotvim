@@ -14,8 +14,9 @@ mkdir -p ~/dotvim/backup
 mkdir -p ~/dotvim/snippets
 ln -s ~/dotfiles/private/vim-snippets/mail.snippets ~/dotvim/snippets
 
-git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
-vim -u ~/.vim/bundles.vim +BundleInstall +q
+X git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
+X vim -u ~/.vim/bundles.vim +BundleInstall +q
+in vim, do a ":PlugInstall"
 --
 
 Taglist requires exuberant-ctags to be installed on the system
