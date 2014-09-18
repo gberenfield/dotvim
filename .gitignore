@@ -3,7 +3,7 @@ tmp
 backup/*
 swp/*
 .netrwhist
-bundle/*
+plugged/*
 view/*
 snippets/mail.snippets
 vimrc.private
