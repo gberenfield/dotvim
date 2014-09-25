@@ -51,8 +51,6 @@ set noequalalways
 " ZoomWin configuration
 map <Leader>c :ZoomWin<CR>
 
-" map PP to paste in system/linux clipboard
-nmap PP "*p
 
 " Ctrlp
 let g:ctrlp_working_path_mode = 0
@@ -180,7 +178,18 @@ set showcmd
 
 " Yankring
 let g:yankring_history_file = '.yankring_history'
-let g:yankring_manual_clipboard_check = 0
+" let g:yankring_manual_clipboard_check = 0
+
+" something to tinker with, just in case fakeclip fails...
+function! g:CopyTheTextPlease()
+    let old_z = @z
+    normal! gv"zy
+    call system('pbcopy', @z)
+    let @z = old_z
+endfunction
+" map PP to paste in system/linux clipboard, trying fakeclip
+nmap PP "*p
+
 
 " " " Better Rainbow Parentheses
 " let g:rbpt_colorpairs = [

@@ -74,6 +74,7 @@ Plug 'tpope/vim-sexp-mappings-for-regular-people'
 Plug 'gregsexton/MatchTag'
 Plug 'guns/vim-clojure-highlight'
 Plug 'typedclojure/vim-typedclojure'
+Plug 'kana/vim-fakeclip'
 
 " filet plugin on
 " filetype plugin indent on
