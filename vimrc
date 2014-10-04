@@ -242,9 +242,13 @@ let g:indent_guides_auto_colors = 1
 " MUTT/e-mail spellchecking
 autocmd FileType mail set spell
 autocmd FileType mail setlocal fo+=aw
+autocmd FileType mail set textwidth=120
 
 " XML lint the xml
 au FileType xml exe ":silent 1,$!xmllint --format --recover - 2>/dev/null"
+
+" Vimwiki wiki  settings
+autocmd FileType vimwiki set textwidth=120
 
 " add json syntax highlighting
 au BufNewFile,BufRead *.json set ft=json
