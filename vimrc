@@ -179,6 +179,7 @@ set showcmd
 " Yankring
 let g:yankring_history_file = '.yankring_history'
 " let g:yankring_manual_clipboard_check = 0
+nnoremap <silent> <F10> :YRShow<CR>
 
 " something to tinker with, just in case fakeclip fails...
 function! g:CopyTheTextPlease()
@@ -188,7 +189,10 @@ function! g:CopyTheTextPlease()
     let @z = old_z
 endfunction
 " map PP to paste in system/linux clipboard, trying fakeclip
+let g:fakeclip_terminal_multiplexer_type="tmux"
 nmap PP "*p
+" "*Y to yank vim text to system clipboard
+vmap YY "*Y
 
 
 " " " Better Rainbow Parentheses
@@ -242,7 +246,7 @@ let g:indent_guides_auto_colors = 1
 " MUTT/e-mail spellchecking
 autocmd FileType mail set spell
 autocmd FileType mail setlocal fo+=aw
-autocmd FileType mail set textwidth=120
+" autocmd FileType mail set textwidth=120
 
 " XML lint the xml
 au FileType xml exe ":silent 1,$!xmllint --format --recover - 2>/dev/null"
