@@ -3,10 +3,14 @@
 " Maintainer: Grge Berenfield
 " Latest Revision: 17 September 2013
 
-if exists("b:current_syntax")
+if version < 600
+  syntax clear
+elseif exists("b:current_syntax")
   finish
 endif
-let b:current_syntax = "adr"
+
+scriptencoding utf-8
+
 syn case ignore 
 
 syn match Name "Name:"
@@ -14,7 +18,7 @@ syn match mytitle "Title:"
 syn match Company "Company:"
 syn match Category "Category:"
 syn match Address "Address.*:"
-syn match phone 'Phone.*:'
+syn match Phone 'Phone.*:'
 syn match Email 'Email.*:'
 syn match Notes "Notes:"
 syn match Jabber "Jabber:"
@@ -24,7 +28,7 @@ syn match Skype "Skype:"
 syn match Url "URL.*:"
 syn match Birthday "Birthday:"
 
-syn region adrblock start="\n^Name" end="###" fold contains=ALL
+syn region adrblock start="\n^Name" end="^###" fold transparent
 
 highlight def link Name Keyword
 highlight def link mytitle Identifier
@@ -40,3 +44,5 @@ highlight def link Birthday Identifier
 highlight def link Skype Identifier
 highlight def link URL Identifier
 highlight def link Notes Identifier
+
+let b:current_syntax = "adr"
