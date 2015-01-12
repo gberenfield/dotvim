@@ -1,14 +1,4 @@
-" filetype off " required!
-
-" set nocompatible
-
-"" set rtp+=~/.vim/Plug/vundle/
-" call vundle#rc()
 call plug#begin('~/.vim/plugged')
-
-" let Vundle manage Vundle
-" required!
-Plug 'gmarik/vundle'
 Plug 'bling/vim-airline'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-rails'
@@ -47,7 +37,7 @@ Plug 'YankRing.vim'
 Plug 'kien/ctrlp.vim'
 Plug 'nathanaelkane/vim-indent-guides'
 Plug 'restore_view.vim'
-Plug 'jamessan/vim-gnupg'
+" Plug 'jamessan/vim-gnupg'
 Plug 'vimwiki'
 Plug 'MapFinder'
 Plug 'flazz/vim-colorschemes'
