@@ -388,3 +388,11 @@ augroup bencrypted
         " after the file has been written.
         autocmd BufWritePost,FileWritePost        *.gpg   u
 augroup END
+
+" local .vim config files when vim started in 'thisdir'
+" see https://stackoverflow.com/questions/1889602/multiple-vim-configurations
+let b:thisdir=expand("%:p:h")
+let b:vim=b:thisdir."/.vim"
+if (filereadable(b:vim))
+    execute "source ".b:vim
+endif
