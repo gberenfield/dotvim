@@ -65,6 +65,8 @@ Plug 'gregsexton/MatchTag'
 Plug 'guns/vim-clojure-highlight'
 Plug 'typedclojure/vim-typedclojure'
 Plug 'kana/vim-fakeclip'
+Plug 'venantius/vim-cljfmt'
+Plug 'venantius/vim-eastwood'
 
 " filet plugin on
 " filetype plugin indent on
