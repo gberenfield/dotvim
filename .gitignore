@@ -8,3 +8,4 @@ view/*
 snippets/mail.snippets
 vimrc.private
 vimpager/
+autoload/plug*
