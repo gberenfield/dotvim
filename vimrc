@@ -309,6 +309,8 @@ au FileType adr set foldmethod=syntax
 let g:clojure_foldwords = "def,ns,comment,add-filter!"
 " Clojure filetype for cljx files.. not great but until better comes along...
 au BufNewFile,BufRead *.cljx set filetype=clojure
+" Boot files
+au BufNewFile,BufRead *.boot set filetype=clojure
 
 " vim-fireplace
 " evulate inner () with 'cpc'
